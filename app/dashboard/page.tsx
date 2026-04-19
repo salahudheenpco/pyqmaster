@@ -44,7 +44,7 @@ export default function DashboardPage() {
       <section className="mx-auto max-w-7xl px-6 py-10">
         <div className="mb-10 flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl">
           <span className="w-fit rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
-            Welcome to PYQMaster
+            Welcome to PYQ Forge
           </span>
 
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">

@@ -66,7 +66,7 @@ export default function StudentPrograms() {
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-slate-300">
-            PYQMaster is designed around the idea that not every student should
+            PYQ Forge is designed around the idea that not every student should
             follow the same program. Students at different stages need different
             pacing, explanation depth, and practice intensity.
           </p>

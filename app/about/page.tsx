@@ -29,7 +29,7 @@ export default function AboutPage() {
       <main className="mx-auto max-w-7xl px-6 py-12">
         <section className="max-w-4xl">
           <div className="inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm font-medium text-cyan-300">
-            About PYQMaster
+            About PYQ Forge
           </div>
 
           <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
@@ -37,7 +37,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="mt-4 text-lg leading-8 text-slate-300">
-            PYQMaster is designed to help students prepare for entrance exams
+            PYQ Forge is designed to help students prepare for entrance exams
             like JEE, BITSAT, NEET, and similar tests using a more focused,
             practical, and exam-oriented approach.
           </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
 
           <p className="mt-4 text-lg leading-8 text-slate-300">
             Many students spend a lot of time studying without knowing whether
-            they are improving in the right direction. PYQMaster aims to reduce
+            they are improving in the right direction. PYQ Forge aims to reduce
             that confusion by connecting practice, explanations, analysis, and
             planning into one flow.
           </p>

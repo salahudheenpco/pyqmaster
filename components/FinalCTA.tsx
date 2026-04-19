@@ -15,7 +15,7 @@ export default function FinalCTA() {
             </h2>
 
             <p className="mt-4 text-lg leading-8 text-slate-300">
-              PYQMaster is built to help students stop preparing randomly. Start
+              PYQ Forge is built to help students stop preparing randomly. Start
               by identifying your level, then move into focused question
               practice, explanation depth, and a program path that fits your
               stage.

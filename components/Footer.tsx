@@ -21,7 +21,7 @@ export default function Footer() {
                 PYQ
               </div>
               <div>
-                <div className="text-lg font-bold text-white">PYQMaster</div>
+                <div className="text-lg font-bold text-white">PYQ Forge</div>
                 <div className="text-sm text-slate-400">
                   Entrance Exam Preparation
                 </div>
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-sm text-slate-400">
-          © 2026 PYQMaster. Built for focused exam preparation.
+          © 2026 PYQ Forge. Built for focused exam preparation.
         </div>
       </div>
     </footer>

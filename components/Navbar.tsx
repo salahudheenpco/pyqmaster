@@ -27,7 +27,7 @@ export default function Navbar() {
           </div>
 
           <div>
-            <div className="text-lg font-bold text-white">PYQMaster</div>
+            <div className="text-lg font-bold text-white">PYQ Forge</div>
             <div className="text-xs text-slate-400">
               Entrance Exam Preparation
             </div>

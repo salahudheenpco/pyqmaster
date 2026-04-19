@@ -45,7 +45,7 @@ export default function Features() {
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-slate-300">
-            PYQMaster is not just a question list. It is meant to become a
+            PYQ Forge is not just a question list. It is meant to become a
             focused preparation system where students can practice, understand,
             analyze, and improve with direction.
           </p>

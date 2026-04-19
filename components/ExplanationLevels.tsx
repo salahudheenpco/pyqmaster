@@ -52,7 +52,7 @@ export default function ExplanationLevels() {
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-slate-300">
-            Not every student needs the same explanation. PYQMaster lets
+            Not every student needs the same explanation. PYQ Forge lets
             students learn through different explanation depths so they can move
             faster where they are strong and slow down where they need clarity.
           </p>

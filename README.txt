@@ -1,4 +1,4 @@
-PYQMaster BITSAT 2017 starter pack
+PYQ Forge BITSAT 2017 starter pack
 
 Included files:
 - data/question-bank/bitsat/physics/projectile-motion.ts

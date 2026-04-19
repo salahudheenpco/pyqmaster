@@ -3,7 +3,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <div>
-          <div className="text-xl font-bold tracking-tight">PYQMaster</div>
+          <div className="text-xl font-bold tracking-tight">PYQ Forge</div>
           <div className="text-xs text-slate-500">
             Entrance exam prep through strategic PYQ solving
           </div>

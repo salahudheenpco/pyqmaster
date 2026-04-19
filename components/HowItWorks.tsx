@@ -38,7 +38,7 @@ export default function HowItWorks() {
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-slate-300">
-            PYQMaster is designed to make preparation more focused. Instead of
+            PYQ Forge is designed to make preparation more focused. Instead of
             jumping randomly between topics, students move through a clear loop
             of practice, explanation, review, and improvement.
           </p>

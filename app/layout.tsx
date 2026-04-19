@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "PYQMaster",
+  title: "PYQ Forge",
   description: "PYQ-first platform for entrance exam preparation",
 };
 
