@@ -1,0 +1,26 @@
+{
+  "total_questions": 500,
+  "chapter_files": 20,
+  "chapters": [
+    "jee-main/physics/kinematics.ts",
+    "jee-main/physics/laws-of-motion.ts",
+    "jee-main/physics/work-power-energy.ts",
+    "jee-main/physics/current-electricity.ts",
+    "jee-main/chemistry/atomic-structure.ts",
+    "jee-main/chemistry/chemical-bonding.ts",
+    "jee-main/chemistry/thermodynamics.ts",
+    "jee-main/chemistry/hydrocarbons.ts",
+    "jee-main/mathematics/quadratic-equations.ts",
+    "jee-main/mathematics/sequences-series.ts",
+    "jee-main/mathematics/matrices.ts",
+    "jee-main/mathematics/differentiation.ts",
+    "bitsat/physics/kinematics.ts",
+    "bitsat/chemistry/chemical-bonding.ts",
+    "bitsat/mathematics/quadratic-equations.ts",
+    "bitsat/mathematics/differentiation.ts",
+    "neet/physics/current-electricity.ts",
+    "neet/chemistry/atomic-structure.ts",
+    "neet/biology/cell-biology.ts",
+    "neet/biology/human-physiology.ts"
+  ]
+}
