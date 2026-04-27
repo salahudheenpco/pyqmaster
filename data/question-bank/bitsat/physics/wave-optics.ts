@@ -43,4 +43,25 @@ export const bitsatWaveOpticsQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Physics, and the main concept involved is Intensity at a point between bright fringes.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Intensity at a point between bright fringes and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as 2.\n\nExtra understanding:\nQuestions from Intensity at a point between bright fringes often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is 2."
     }
   }
+{
+  id: "bitsat-2018-physics-wave-optics-003",
+  exam: "BITSAT",
+  subject: "Physics",
+  chapter: "Wave Optics",
+  topic: "Young's Double Slit Experiment",
+  year: 2018,
+  questionText: "In Young's double slit experiment, intensity at a point is (1/4) of the maximum intensity. Angular position of this point is",
+  options: [
+    "sin⁻¹(λ/d)",
+    "sin⁻¹(λ/2d)",
+    "sin⁻¹(λ/3d)",
+    "sin⁻¹(λ/4d)"
+  ],
+  correctAnswer: "sin⁻¹(λ/3d)",
+  explanation: {
+    quick: "Use I = Imax cos²(φ/2). Set I = Imax/4 and solve for path difference.",
+    standard: "For YDSE, I = Imax cos²(φ/2). If I = Imax/4, then cos²(φ/2) = 1/4, so φ = 2π/3. Therefore path difference is λ/3 and d sinθ = λ/3. Hence θ = sin⁻¹(λ/3d).",
+    deep: "Let us understand the question from the beginning…\n\nIn Young’s double slit experiment, the intensity at a point is given by:\nI = Imax cos²(φ/2)\n\nWe are told:\nI = Imax / 4\n\nSo:\ncos²(φ/2) = 1/4\n\nTaking the principal value:\ncos(φ/2) = 1/2\n\nHence:\nφ/2 = π/3\nso,\nφ = 2π/3\n\nNow phase difference and path difference are related by:\nφ = (2π/λ) Δx\n\nThus:\n2π/3 = (2π/λ) Δx\n\nSo:\nΔx = λ/3\n\nIn YDSE:\nΔx = d sinθ\n\nTherefore:\nd sinθ = λ/3\n\nHence:\nsinθ = λ/(3d)\n\nSo the angular position is:\nθ = sin⁻¹(λ/3d)\n\nTherefore, the correct answer is sin⁻¹(λ/3d)."
+  }
+}
 ];

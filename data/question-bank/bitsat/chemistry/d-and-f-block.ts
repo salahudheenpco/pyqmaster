@@ -22,4 +22,20 @@ export const bitsatDAndFBlockQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Maximum magnetic moment among metal ions.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Maximum magnetic moment among metal ions and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as Fe²⁺.\n\nExtra understanding:\nQuestions from Maximum magnetic moment among metal ions often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is Fe²⁺."
     }
   }
+{
+  id: "bitsat-2018-chemistry-df-block-002",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "d and f Block",
+  topic: "Actinoids",
+  year: 2018,
+  questionText: "Which actinoid does not have stable electronic configuration?",
+  options: ["Protactinium","Nobelium","Americium","Lawrencium"],
+  correctAnswer: "Protactinium",
+  explanation: {
+    quick: "Protactinium shows irregular configuration",
+    standard: "Others have relatively stable half/fully filled orbitals",
+    deep: "Let us understand the question from the beginning…\n\nProtactinium has unstable configuration compared to others.\n\nTherefore, the correct answer is Protactinium."
+  }
+}
 ];

@@ -43,4 +43,20 @@ export const bitsatMoleConceptStoichiometryQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Comparing number of moles from given masses.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Comparing number of moles from given masses and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as All have the same number of moles.\n\nExtra understanding:\nQuestions from Comparing number of moles from given masses often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is All have the same number of moles."
     }
   }
+{
+  id: "bitsat-2018-chemistry-mole-concept-003",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "Mole Concept",
+  topic: "Empirical Formula",
+  year: 2018,
+  questionText: "Empirical formula CH₂O, molecular mass 180. Molecular formula is",
+  options: ["C₉H₁₈O₉","CH₂O","C₆H₁₂O₆","C₂H₄O₂"],
+  correctAnswer: "C₆H₁₂O₆",
+  explanation: {
+    quick: "180/30 = 6",
+    standard: "Multiply empirical formula by 6",
+    deep: "Let us understand the question from the beginning…\n\nEmpirical mass = 30\n180/30 = 6\n(CH₂O)₆ = C₆H₁₂O₆\n\nTherefore, the correct answer is C₆H₁₂O₆."
+  }
+}
 ];

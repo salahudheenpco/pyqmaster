@@ -22,4 +22,20 @@ export const bitsatStatesOfMatterQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Deviation from ideal gas behaviour.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Deviation from ideal gas behaviour and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as high pressure and low temperature.\n\nExtra understanding:\nQuestions from Deviation from ideal gas behaviour often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is high pressure and low temperature."
     }
   }
+{
+  id: "bitsat-2018-chemistry-states-of-matter-002",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "States of Matter",
+  topic: "van der Waals Constants",
+  year: 2018,
+  questionText: "Four gases P, Q, R and S have almost same values of b but their a values are in the order Q < R < S < P. The most easily liquifiable gas is",
+  options: ["P","Q","R","S"],
+  correctAnswer: "P",
+  explanation: {
+    quick: "Higher 'a' → stronger attraction → easier liquefaction.",
+    standard: "Since b is same, liquefaction depends on 'a'. Highest a → strongest attraction.",
+    deep: "Let us understand the question from the beginning…\n\nHigher van der Waals 'a' means stronger intermolecular attraction.\nSo highest a liquefies easiest.\nOrder: Q < R < S < P\nHence P is highest.\n\nTherefore, the correct answer is P."
+  }
+}
 ];

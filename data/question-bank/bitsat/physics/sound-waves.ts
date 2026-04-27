@@ -22,4 +22,20 @@ export const bitsatSoundWavesQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Physics, and the main concept involved is Doppler effect due to circular motion of source.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Doppler effect due to circular motion of source and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as 436 Hz to 586 Hz.\n\nExtra understanding:\nQuestions from Doppler effect due to circular motion of source often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is 436 Hz to 586 Hz."
     }
   }
+{
+  id: "bitsat-2018-physics-sound-waves-002",
+  exam: "BITSAT",
+  subject: "Physics",
+  chapter: "Waves",
+  topic: "Doppler Effect",
+  year: 2018,
+  questionText: "A train moves towards a stationary observer with speed 34 m/s. Frequency observed is ν1. When speed reduces to 17 m/s, frequency becomes ν2. If speed of sound is 340 m/s, find ν1/ν2.",
+  options: ["19/18", "18/19", "2", "1/2"],
+  correctAnswer: "19/18",
+  explanation: {
+    quick: "Use Doppler formula.",
+    standard: "ν' = ν(v/(v−vs)). Take ratio.",
+    deep: "Let us understand the question from the beginning…\n\nν1 = ν(340/(340−34))\nν2 = ν(340/(340−17))\n\nTaking ratio:\nν1/ν2 = (340−17)/(340−34) = 323/306 = 19/18\n\nTherefore, the correct answer is 19/18."
+  }
+}
 ];

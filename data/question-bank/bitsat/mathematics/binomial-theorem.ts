@@ -43,4 +43,36 @@ export const bitsatBinomialTheoremQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Summation involving ratios of consecutive binomial coefficients.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Summation involving ratios of consecutive binomial coefficients and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as 5(2n - 9).\n\nExtra understanding:\nQuestions from Summation involving ratios of consecutive binomial coefficients often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is 5(2n - 9)."
     }
   }
+{
+  id: "bitsat-2018-math-binomial-003",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Binomial Theorem",
+  topic: "Coefficient",
+  year: 2018,
+  questionText: "The coefficient of x^(-n) in (1 + x)^n(1 + 1/x)^n is",
+  options: ["0","1","2^n","2n"],
+  correctAnswer: "1",
+  explanation: {
+    quick: "Expression becomes x^(-n)(1+x)^(2n).",
+    standard: "Coefficient reduces to constant term of (1+x)^(2n).",
+    deep: "Let us understand the question from the beginning…\n\n(1+1/x)^n = x^(-n)(1+x)^n\nSo expression = x^(-n)(1+x)^(2n)\n\nCoefficient of x^(-n) = constant term of (1+x)^(2n) = 1\n\nTherefore, answer is 1."
+  }
+},
+{
+  id: "bitsat-2018-math-binomial-004",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Binomial Theorem",
+  topic: "Greatest Term",
+  year: 2018,
+  questionText: "The greatest term in √3(1 + 1/√3)^20 is",
+  options: ["26840/9","24840/9","25840/9","None"],
+  correctAnswer: "25840/9",
+  explanation: {
+    quick: "Use ratio method.",
+    standard: "Greatest term occurs at r≈7.",
+    deep: "Let us understand the question from the beginning…\n\nUsing greatest term formula r≈7\nSubstitute → gives 25840/9\n\nTherefore correct answer is 25840/9."
+  }
+}
 ];

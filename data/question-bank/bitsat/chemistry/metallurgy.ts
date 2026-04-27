@@ -43,4 +43,25 @@ export const bitsatMetallurgyQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Metal extracted by cyanide process.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Metal extracted by cyanide process and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as Ag.\n\nExtra understanding:\nQuestions from Metal extracted by cyanide process often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is Ag."
     }
   }
+{
+  id: "bitsat-2018-chemistry-metallurgy-003",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "Metallurgy",
+  topic: "Hall-Heroult Process",
+  year: 2018,
+  questionText: "Incorrect statement about Hall-Heroult process is",
+  options: [
+    "CO and CO₂ are produced",
+    "Al₂O₃ + CaF₂ lowers melting point",
+    "Al³⁺ reduced at cathode",
+    "Na₃AlF₆ serves as electrolyte"
+  ],
+  correctAnswer: "Na₃AlF₆ serves as electrolyte",
+  explanation: {
+    quick: "Cryolite mainly acts as solvent",
+    standard: "Al₂O₃ provides ions; cryolite is medium",
+    deep: "Let us understand the question from the beginning…\n\nCryolite acts as solvent, not primary electrolyte.\n\nTherefore, the correct answer is option (d)."
+  }
+}
 ];

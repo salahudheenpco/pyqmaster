@@ -44,7 +44,7 @@ export const bitsatThreeDimensionalGeometryQuestions: PYQQuestion[] = [
     }
   },
   {
-    id: "bitsat-2017-mathematics-3d-002",
+    id: "bitsat-2017-mathematics-3d-003",
     exam: "BITSAT",
     subject: "Mathematics",
     chapter: "Three Dimensional Geometry",
@@ -64,4 +64,36 @@ export const bitsatThreeDimensionalGeometryQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Direction ratios.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Direction ratios and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as (1,1,1).\n\nExtra understanding:\nQuestions from Direction ratios often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is (1,1,1)."
     }
   }
+{
+  id: "bitsat-2018-math-3d-geometry-004",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "3D Geometry",
+  topic: "Distance from Plane",
+  year: 2018,
+  questionText: "Locus of point is",
+  options: ["x²+z²=p²","x²+2xy+y²+z²=p²","x+y+z=0","x²+y²+z²=p²"],
+  correctAnswer: "x²+y²+z²=p²",
+  explanation: {
+    quick: "Use distance formula.",
+    standard: "Equidistance gives sphere.",
+    deep: "Let us understand the question from the beginning…\n\nSum of squared distances gives sphere.\n\nTherefore answer is x²+y²+z²=p²."
+  }
+}
+{
+  id: "bitsat-2018-math-3d-geometry-005",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "3D Geometry",
+  topic: "Planes",
+  year: 2018,
+  questionText: "Planes are perpendicular, find λ² + λ",
+  options: ["0","2","1","3"],
+  correctAnswer: "2",
+  explanation: {
+    quick: "Dot product = 0.",
+    standard: "Equate normals perpendicular.",
+    deep: "Let us understand the question from the beginning…\n\nUsing perpendicular condition gives λ²+λ=2.\n\nTherefore answer is 2."
+  }
+}
 ];

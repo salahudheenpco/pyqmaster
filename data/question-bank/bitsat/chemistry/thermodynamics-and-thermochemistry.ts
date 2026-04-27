@@ -64,4 +64,36 @@ export const bitsatThermodynamicsAndThermochemistryQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Relation between ΔH and ΔE.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Relation between ΔH and ΔE and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as ΔH > ΔE.\n\nExtra understanding:\nQuestions from Relation between ΔH and ΔE often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is ΔH > ΔE."
     }
   }
+{
+  id: "bitsat-2018-chemistry-thermodynamics-004",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "Thermodynamics",
+  topic: "Enthalpy of Combustion",
+  year: 2018,
+  questionText: "Enthalpy of combustion of methane and ethane are −210 kcal/mol and −368 kcal/mol respectively. Enthalpy of combustion of decane is",
+  options: ["−1582 kcal","−1632 kcal","−1700 kcal","−1480 kcal"],
+  correctAnswer: "−1632 kcal",
+  explanation: {
+    quick: "Use increment of −158 kcal per CH₂ unit",
+    standard: "Each additional CH₂ adds ~−158 kcal. For decane, calculation gives −1632 kcal.",
+    deep: "Let us understand the question from the beginning…\n\nDifference between CH₄ and C₂H₆ = −158 kcal.\nEach CH₂ adds −158.\nC10H22 has 8 extra CH₂ units from methane.\nSo:\nΔH = −210 − (8×158)\n= −1632 kcal\n\nTherefore, the correct answer is −1632 kcal."
+  }
+}
+{
+  id: "bitsat-2018-chemistry-thermodynamics-005",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "Thermodynamics",
+  topic: "Gibbs Free Energy",
+  year: 2018,
+  questionText: "Determine spontaneity at 25°C",
+  options: ["reversible","spontaneous","non-spontaneous","irreversible"],
+  correctAnswer: "spontaneous",
+  explanation: {
+    quick: "ΔG = ΔH − TΔS",
+    standard: "Negative ΔG → spontaneous",
+    deep: "Let us understand the question from the beginning…\n\nΔG = ΔH − TΔS\nSubstituting values gives ΔG < 0\n\nTherefore, reaction is spontaneous."
+  }
+}
 ];

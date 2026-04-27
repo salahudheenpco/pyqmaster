@@ -43,4 +43,25 @@ export const bitsatCoordinationCompoundsQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Hybridisation of K₃[Fe(CN)₆].\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Hybridisation of K₃[Fe(CN)₆] and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as d²sp³.\n\nExtra understanding:\nQuestions from Hybridisation of K₃[Fe(CN)₆] often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is d²sp³."
     }
   }
+{
+  id: "bitsat-2018-chemistry-coordination-compounds-003",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "Coordination Compounds",
+  topic: "Spectrochemical Series",
+  year: 2018,
+  questionText: "Correct wavelength order for absorption is",
+  options: [
+    "[Ni(NO₂)₆]⁴⁻ < [Ni(NH₃)₆]²⁺ < [Ni(H₂O)₆]²⁺",
+    "[Ni(NO₂)₆]⁴⁻ < [Ni(H₂O)₆]²⁺ < [Ni(NH₃)₆]²⁺",
+    "[Ni(H₂O)₆]²⁺ < [Ni(NH₃)₆]²⁺ < [Ni(NO₂)₆]⁴⁻",
+    "[Ni(NH₃)₆]²⁺ < [Ni(H₂O)₆]²⁺ < [Ni(NO₂)₆]⁴⁻"
+  ],
+  correctAnswer: "[Ni(NO₂)₆]⁴⁻ < [Ni(NH₃)₆]²⁺ < [Ni(H₂O)₆]²⁺",
+  explanation: {
+    quick: "Stronger ligand → smaller wavelength",
+    standard: "NO₂⁻ > NH₃ > H₂O → wavelength opposite",
+    deep: "Let us understand the question from the beginning…\n\nΔ increases: NO₂⁻ > NH₃ > H₂O\nλ ∝ 1/Δ\nSo λ order reverses.\n\nTherefore, the correct answer is option (a)."
+  }
+}
 ];

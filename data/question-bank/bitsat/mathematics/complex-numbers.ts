@@ -43,4 +43,20 @@ export const bitsatComplexNumbersQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Sum of vertices of an equilateral triangle in complex plane.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Sum of vertices of an equilateral triangle in complex plane and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as z₁ + z₂ + z₃ = 0.\n\nExtra understanding:\nQuestions from Sum of vertices of an equilateral triangle in complex plane often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is z₁ + z₂ + z₃ = 0."
     }
   }
+{
+  id: "bitsat-2018-math-complex-003",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Complex Numbers",
+  topic: "Roots of Unity",
+  year: 2018,
+  questionText: "The nth roots of unity are in",
+  options: ["AP","GP","HP","None"],
+  correctAnswer: "GP",
+  explanation: {
+    quick: "Successive powers of ω.",
+    standard: "They form geometric progression.",
+    deep: "Let us understand the question from the beginning…\n\nRoots: 1, ω, ω²,...\nEach term = previous × ω\n\nHence GP.\n\nTherefore answer is GP."
+  }
+}
 ];

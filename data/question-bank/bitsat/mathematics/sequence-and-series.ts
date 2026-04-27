@@ -64,4 +64,36 @@ export const bitsatSequenceAndSeriesQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Infinite series involving factorial expressions.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Infinite series involving factorial expressions and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as e.\n\nExtra understanding:\nQuestions from Infinite series involving factorial expressions often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is e."
     }
   }
+{
+  id: "bitsat-2018-math-sequence-004",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Sequences and Series",
+  topic: "GP + AP",
+  year: 2018,
+  questionText: "Triangle formed by a,b,c is",
+  options: ["equilateral","right","acute","obtuse"],
+  correctAnswer: "obtuse",
+  explanation: {
+    quick: "Use GP relation.",
+    standard: "Check inequality.",
+    deep: "Let us understand the question from the beginning…\n\nCondition leads to obtuse triangle."
+  }
+},
+{
+  id: "bitsat-2018-math-sequence-005",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Sequences and Series",
+  topic: "Series Limit",
+  year: 2018,
+  questionText: "Limit of Σ(1/tᵣ)",
+  options: ["1/8","1/4","1/2","1"],
+  correctAnswer: "1/2",
+  explanation: {
+    quick: "Use telescoping.",
+    standard: "Convert into telescopic form.",
+    deep: "Let us understand the question from the beginning…\n\nSeries telescopes → limit = 1/2."
+  }
+}
 ];

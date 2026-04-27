@@ -43,4 +43,36 @@ export const bitsatPBlockQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Product obtained when borax solution is acidified.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Product obtained when borax solution is acidified and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as H₃BO₃.\n\nExtra understanding:\nQuestions from Product obtained when borax solution is acidified often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is H₃BO₃."
     }
   }
+{
+  id: "bitsat-2018-chemistry-pblock-003",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "p-Block",
+  topic: "Lassaigne Test",
+  year: 2018,
+  questionText: "Compound giving blood red color",
+  options: ["(NH2)2CO","H2N(C6H4)SO3H","C6H5SO3H","CHCl3"],
+  correctAnswer: "H2N(C6H4)SO3H",
+  explanation: {
+    quick: "Nitrogen + Fe³⁺ → blood red complex",
+    standard: "Aromatic amine shows positive test",
+    deep: "Let us understand the question from the beginning…\n\nNitrogen compounds give blood red complex.\n\nTherefore, correct answer is option (b)."
+  }
+},
+{
+  id: "bitsat-2018-chemistry-pblock-004",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "p-Block",
+  topic: "Boron Compounds",
+  year: 2018,
+  questionText: "Product formed when BCl3 reacts with H2 and NH3",
+  options: ["B2O3","B3N3H6","H3BO3","B2H6"],
+  correctAnswer: "B3N3H6",
+  explanation: {
+    quick: "Forms borazine",
+    standard: "NH3 + BCl3 gives borazine",
+    deep: "Let us understand the question from the beginning…\n\nReaction leads to borazine (inorganic benzene).\n\nTherefore, correct answer is B3N3H6."
+  }
+}
 ];

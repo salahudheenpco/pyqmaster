@@ -85,4 +85,89 @@ export const bitsatRelationsAndFunctionsQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Evaluating an expression using a multiplicative functional equation.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Evaluating an expression using a multiplicative functional equation and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as 2.\n\nExtra understanding:\nQuestions from Evaluating an expression using a multiplicative functional equation often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is 2."
     }
   }
+{
+  id: "bitsat-2018-math-functions-005",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Functions",
+  topic: "Matrix Property",
+  year: 2018,
+  questionText: "If PᵀP = I and abc=1, find a³+b³+c³",
+  options: ["2","1","0","5"],
+  correctAnswer: "2",
+  explanation: {
+    quick: "Orthogonal matrix property.",
+    standard: "Use determinant relation.",
+    deep: "Let us understand the question from the beginning…\n\nUsing orthogonal property gives answer = 2."
+  }
+},
+{
+  id: "bitsat-2018-math-functions-006",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Mathematical Logic",
+  topic: "Tautology",
+  year: 2018,
+  questionText: "Which statement is a tautology?",
+  options: ["(p∧q)∨¬p","(q∧p)∨(p∧¬p)","Both","None"],
+  correctAnswer: "Both",
+  explanation: {
+    quick: "Check truth table.",
+    standard: "Both expressions always true.",
+    deep: "Let us understand the question from the beginning…\n\nBoth expressions are always true → tautology.\n\nTherefore answer is Both."
+  }
+},
+{
+  id: "bitsat-2018-math-functions-007",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Functions",
+  topic: "Inverse Function",
+  year: 2018,
+  questionText: "Inverse of logₐ(x+√(x²+1)) is",
+  options: ["1/2(a^x−a^-x)","not defined","x>0","None"],
+  correctAnswer: "1/2(a^x−a^-x)",
+  explanation: {
+    quick: "Solve y=log form.",
+    standard: "Rationalize and isolate x.",
+    deep: "Let us understand the question from the beginning…\n\nSolving gives x = 1/2(a^y − a^-y)\n\nTherefore answer is 1/2(a^x−a^-x)."
+  }
+}
+{
+  id: "bitsat-2018-math-functions-008",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Functions",
+  topic: "Functional Equation",
+  year: 2018,
+  questionText: "Find f(x) given f(x+y)=f(x)+2y²+kxy",
+  options: ["2x²","6x−4","x²+3x−2","−x²+9x−6"],
+  correctAnswer: "x²+3x−2",
+  explanation: {
+    quick: "Assume quadratic form.",
+    standard: "Compare coefficients.",
+    deep: "Let us understand the question from the beginning…\n\nAssume f(x)=ax²+bx+c\nSubstitute → compare coefficients\nSolve → f(x)=x²+3x−2\n\nTherefore answer is x²+3x−2."
+  }
+}
+{
+  id: "bitsat-2018-math-functions-009",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Mathematical Logic",
+  topic: "Logical Statements",
+  year: 2018,
+  questionText: "Given p, q, r defined, which logical expression is correct?",
+  options: [
+    "(p ∧ q)",
+    "(p ∧ q) ∧ r",
+    "(q ∧ r) ∧ p",
+    "p ∧ (q ∧ r)"
+  ],
+  correctAnswer: "p ∧ (q ∧ r)",
+  explanation: {
+    quick: "Evaluate truth values.",
+    standard: "Check each condition logically.",
+    deep: "Let us understand the question from the beginning…\n\nEvaluate p, q, r from definitions\nSubstitute truth values\nOnly expression p ∧ (q ∧ r) holds true\n\nTherefore answer is option (d)."
+  }
+}
 ];

@@ -64,4 +64,36 @@ export const bitsatStructureOfAtomQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Validity of quantum numbers.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Validity of quantum numbers and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as n = 3, l = 3, m = 0.\n\nExtra understanding:\nQuestions from Validity of quantum numbers often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is n = 3, l = 3, m = 0."
     }
   }
+{
+  id: "bitsat-2018-chemistry-structure-of-atom-004",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "Structure of Atom",
+  topic: "Hydrogen-like Radius",
+  year: 2018,
+  questionText: "If (0.53 × 10⁻¹⁰ / 4) m is radius of smallest orbit, identify atom",
+  options: ["H","He⁺","Li²⁺","Be³⁺"],
+  correctAnswer: "Be³⁺",
+  explanation: {
+    quick: "r = a₀/Z",
+    standard: "a₀/Z = a₀/4 → Z = 4",
+    deep: "Let us understand the question from the beginning…\n\nr = a₀/Z\nGiven r = a₀/4 → Z = 4\nHydrogen-like → one electron → Be³⁺\n\nTherefore, the correct answer is Be³⁺."
+  }
+}
+{
+  id: "bitsat-2018-chemistry-structure-of-atom-005",
+  exam: "BITSAT",
+  subject: "Chemistry",
+  chapter: "Structure of Atom",
+  topic: "Uncertainty Principle",
+  year: 2018,
+  questionText: "Position uncertainty of electron is",
+  options: ["1.5×10⁻⁴ m","5.10×10⁻³ m","1.92×10⁻³ m","3.84×10⁻³ m"],
+  correctAnswer: "1.92×10⁻³ m",
+  explanation: {
+    quick: "Δx = h / (4πmΔv)",
+    standard: "Substitute values into uncertainty equation",
+    deep: "Let us understand the question from the beginning…\n\nΔx = h/(4πmΔv)\nSubstituting values gives 1.92×10⁻³ m\n\nTherefore, the correct answer is 1.92×10⁻³ m."
+  }
+}
 ];

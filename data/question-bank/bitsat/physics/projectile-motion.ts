@@ -64,4 +64,41 @@ export const bitsatProjectileMotionQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Physics, and the main concept involved is Projectile with additional horizontal acceleration.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Projectile with additional horizontal acceleration and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as (R + H), H.\n\nExtra understanding:\nQuestions from Projectile with additional horizontal acceleration often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is (R + H), H."
     }
   }
+{
+  id: "bitsat-2018-physics-projectile-motion-004",
+  exam: "BITSAT",
+  subject: "Physics",
+  chapter: "Kinematics",
+  topic: "Projectile Motion",
+  year: 2018,
+  questionText: "A projectile explodes at highest point into 1 kg and 4 kg fragments. KE doubles. Separation when they reach ground is:",
+  options: ["52.25 m", "44.25 m", "65.32 m", "78.76 m"],
+  correctAnswer: "52.25 m",
+  explanation: {
+    quick: "Momentum conserved, velocity splits.",
+    standard: "Use conservation of momentum + projectile motion.",
+    deep: "Let us understand the question from the beginning…\n\nAt highest point, vertical velocity = 0\nExplosion changes horizontal velocity.\n\nUsing conservation of momentum and KE doubling,\nwe find velocity ratio and then horizontal distances.\n\nFinal separation = 52.25 m\n\nTherefore, the correct answer is 52.25 m."
+  }
+}
+{
+  id: "bitsat-2018-physics-projectile-motion-005",
+  exam: "BITSAT",
+  subject: "Physics",
+  chapter: "Kinematics",
+  topic: "Projectile Motion",
+  year: 2018,
+  questionText: "A stone is projected with velocity 2√(gh), so that it just clears two walls of equal height h, at distance of 2h from each other. The time interval of passing between the two walls is",
+  options: [
+    "√(h/g)",
+    "√(2h/g)",
+    "2√(h/g)",
+    "2h/g"
+  ],
+  correctAnswer: "2√(h/g)",
+  explanation: {
+    quick: "Use projectile equation and the condition that the stone just clears both walls.",
+    standard: "Applying the projectile trajectory relation at the two wall positions and using the given launch speed 2√(gh), the time interval between crossing the two walls simplifies to 2√(h/g).",
+    deep: "Let us understand the question from the beginning…\n\nThe stone is projected with speed:\nu = 2√(gh)\n\nIt just clears two walls of equal height h. That means at two different horizontal positions, the projectile has the same vertical height h.\n\nFor projectile motion, the vertical displacement is:\ny = u_y t - (1/2)gt²\n\nSince the projectile reaches the same height h at two different times t₁ and t₂, those times are roots of the same quadratic equation.\n\nThe difference t₂ - t₁ gives the time interval between passing the two walls.\n\nUsing the given speed and simplifying the quadratic relation, the interval comes out to:\nΔt = 2√(h/g)\n\nTherefore, the correct answer is 2√(h/g)."
+  }
+}
 ];

@@ -22,4 +22,20 @@ export const bitsatLimitsQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Limit of rational function.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Limit of rational function and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as 2.\n\nExtra understanding:\nQuestions from Limit of rational function often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is 2."
     }
   }
+{
+  id: "bitsat-2018-math-limits-002",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Limits",
+  topic: "Expansion",
+  year: 2018,
+  questionText: "Find a such that limit = 3/2",
+  options: ["1","0","2","4"],
+  correctAnswer: "1",
+  explanation: {
+    quick: "Use series expansion.",
+    standard: "Apply Taylor expansion.",
+    deep: "Let us understand the question from the beginning…\n\nExpand exponential terms.\nCompare coefficients → a=1.\n\nTherefore answer is 1."
+  }
+}
 ];

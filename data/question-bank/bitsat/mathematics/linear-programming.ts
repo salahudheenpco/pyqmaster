@@ -22,4 +22,36 @@ export const bitsatLinearProgrammingQuestions: PYQQuestion[] = [
       deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Maximum value of an objective function under linear constraints.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Maximum value of an objective function under linear constraints and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as 79.\n\nExtra understanding:\nQuestions from Maximum value of an objective function under linear constraints often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is 79."
     }
   }
+{
+  id: "bitsat-2018-math-lpp-002",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Linear Programming",
+  topic: "Maximization",
+  year: 2018,
+  questionText: "Maximum value of Z = 4x + 2y given constraints",
+  options: ["20","36","40","None"],
+  correctAnswer: "40",
+  explanation: {
+    quick: "Check corner points.",
+    standard: "Plot feasible region.",
+    deep: "Let us understand the question from the beginning…\n\nPlot constraints\nFind corner points\nEvaluate Z at each\nMaximum = 40\n\nTherefore answer is 40."
+  }
+},
+{
+  id: "bitsat-2018-math-lpp-003",
+  exam: "BITSAT",
+  subject: "Mathematics",
+  chapter: "Linear Programming",
+  topic: "Minimization",
+  year: 2018,
+  questionText: "Point where minimum value of Z = 7x − 8y is attained",
+  options: ["(20,0)","(15,5)","(0,5)","(0,20)"],
+  correctAnswer: "(0,5)",
+  explanation: {
+    quick: "Check feasible region corners.",
+    standard: "Evaluate objective function.",
+    deep: "Let us understand the question from the beginning…\n\nPlot constraints\nCheck corner points\nMinimum occurs at (0,5)\n\nTherefore answer is (0,5)."
+  }
+}
 ];
