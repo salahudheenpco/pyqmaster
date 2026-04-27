@@ -9,17 +9,12 @@ export const bitsatMoleConceptStoichiometryQuestions: PYQQuestion[] = [
     topic: "Equivalent weight from oxide composition",
     year: 2017,
     questionText: "4 g of copper was dissolved in concentrated HNO₃. The copper nitrate thus obtained gave 5 g of its oxide on strong heating. The equivalent weight of copper is",
-    options: [
-      "23",
-      "32",
-      "12",
-      "20"
-    ],
+    options: ["23", "32", "12", "20"],
     correctAnswer: "32",
     explanation: {
-      quick: "Use the main concept from Equivalent weight from oxide composition and apply it directly. The correct answer is 32.",
-      standard: "We solve this using the main idea from Equivalent weight from oxide composition. First identify what the question is asking, then use the correct rule, formula, or concept step by step. After substituting the given information carefully, we get the final answer as 32.",
-      deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Equivalent weight from oxide composition.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Equivalent weight from oxide composition and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as 32.\n\nExtra understanding:\nQuestions from Equivalent weight from oxide composition often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is 32."
+      quick: "The oxide contains 4 g copper and 1 g oxygen. Equivalent weight of Cu = mass of Cu combining with 8 g oxygen = 32.",
+      standard: "The oxide obtained weighs 5 g and contains 4 g copper, so oxygen present = 1 g. If 1 g oxygen combines with 4 g copper, then 8 g oxygen will combine with 4 × 8 = 32 g copper. Hence, equivalent weight of copper is 32.",
+      deep: "Let us solve it step by step.\n\nGiven:\nMass of copper = 4 g\nMass of oxide formed = 5 g\n\nSo, mass of oxygen in the oxide:\n5 - 4 = 1 g\n\nEquivalent weight means the mass of the element that combines with 8 g of oxygen.\n\nHere:\n1 g oxygen combines with 4 g copper.\n\nSo:\n8 g oxygen will combine with 4 × 8 = 32 g copper.\n\nTherefore, equivalent weight of copper is 32."
     }
   },
   {
@@ -38,25 +33,25 @@ export const bitsatMoleConceptStoichiometryQuestions: PYQQuestion[] = [
     ],
     correctAnswer: "All have the same number of moles",
     explanation: {
-      quick: "Use the main concept from Comparing number of moles from given masses and apply it directly. The correct answer is All have the same number of moles.",
-      standard: "We solve this using the main idea from Comparing number of moles from given masses. First identify what the question is asking, then use the correct rule, formula, or concept step by step. After substituting the given information carefully, we get the final answer as All have the same number of moles.",
-      deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Comparing number of moles from given masses.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Comparing number of moles from given masses and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as All have the same number of moles.\n\nExtra understanding:\nQuestions from Comparing number of moles from given masses often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is All have the same number of moles."
+      quick: "Each option represents 0.5 mole.",
+      standard: "8 g oxygen atoms = 8/16 = 0.5 mol. 16 g oxygen gas = 16/32 = 0.5 mol. 14 g nitrogen gas = 14/28 = 0.5 mol. Therefore, all have same number of moles.",
+      deep: "Let us calculate each option carefully.\n\nFormula:\nNumber of moles = given mass / molar mass\n\n1. Oxygen atoms:\nAtomic mass of O = 16 g/mol\nMoles = 8/16 = 0.5 mol\n\n2. Oxygen gas:\nO₂ has molar mass = 32 g/mol\nMoles = 16/32 = 0.5 mol\n\n3. Nitrogen gas:\nN₂ has molar mass = 28 g/mol\nMoles = 14/28 = 0.5 mol\n\nAll three options contain 0.5 mole.\n\nTherefore, all have the same number of moles."
+    }
+  },
+  {
+    id: "bitsat-2018-chemistry-mole-concept-003",
+    exam: "BITSAT",
+    subject: "Chemistry",
+    chapter: "Mole Concept and Stoichiometry",
+    topic: "Empirical Formula",
+    year: 2018,
+    questionText: "Empirical formula CH₂O, molecular mass 180. Molecular formula is",
+    options: ["C₉H₁₈O₉", "CH₂O", "C₆H₁₂O₆", "C₂H₄O₂"],
+    correctAnswer: "C₆H₁₂O₆",
+    explanation: {
+      quick: "Empirical formula mass of CH₂O is 30. 180/30 = 6, so molecular formula is C₆H₁₂O₆.",
+      standard: "First calculate empirical formula mass: C + 2H + O = 12 + 2 + 16 = 30. Given molecular mass = 180. Multiplying factor = 180/30 = 6. Therefore, molecular formula = (CH₂O)₆ = C₆H₁₂O₆.",
+      deep: "Let us solve this step by step.\n\nEmpirical formula = CH₂O\n\nFirst calculate empirical formula mass:\nC = 12\nH₂ = 2 × 1 = 2\nO = 16\n\nTotal empirical formula mass = 12 + 2 + 16 = 30\n\nGiven molecular mass = 180\n\nNow find multiplying factor:\nFactor = molecular mass / empirical formula mass\nFactor = 180 / 30 = 6\n\nSo multiply every atom in empirical formula by 6:\n(CH₂O)₆ = C₆H₁₂O₆\n\nTherefore, the molecular formula is C₆H₁₂O₆."
     }
   }
-{
-  id: "bitsat-2018-chemistry-mole-concept-003",
-  exam: "BITSAT",
-  subject: "Chemistry",
-  chapter: "Mole Concept",
-  topic: "Empirical Formula",
-  year: 2018,
-  questionText: "Empirical formula CH₂O, molecular mass 180. Molecular formula is",
-  options: ["C₉H₁₈O₉","CH₂O","C₆H₁₂O₆","C₂H₄O₂"],
-  correctAnswer: "C₆H₁₂O₆",
-  explanation: {
-    quick: "180/30 = 6",
-    standard: "Multiply empirical formula by 6",
-    deep: "Let us understand the question from the beginning…\n\nEmpirical mass = 30\n180/30 = 6\n(CH₂O)₆ = C₆H₁₂O₆\n\nTherefore, the correct answer is C₆H₁₂O₆."
-  }
-}
 ];

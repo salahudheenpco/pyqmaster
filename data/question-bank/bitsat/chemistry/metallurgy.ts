@@ -17,9 +17,9 @@ export const bitsatMetallurgyQuestions: PYQQuestion[] = [
     ],
     correctAnswer: "MgCO₃ → MgO + CO₂",
     explanation: {
-      quick: "Use the main concept from Identification of calcination process and apply it directly. The correct answer is MgCO₃ → MgO + CO₂.",
-      standard: "We solve this using the main idea from Identification of calcination process. First identify what the question is asking, then use the correct rule, formula, or concept step by step. After substituting the given information carefully, we get the final answer as MgCO₃ → MgO + CO₂.",
-      deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Identification of calcination process.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Identification of calcination process and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as MgCO₃ → MgO + CO₂.\n\nExtra understanding:\nQuestions from Identification of calcination process often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is MgCO₃ → MgO + CO₂."
+      quick: "Calcination involves heating carbonate ores in absence of air to form oxide + CO₂.",
+      standard: "Calcination is the process of heating carbonate ores in limited or no air to remove volatile components like CO₂. MgCO₃ decomposes into MgO and CO₂, which is a classic example of calcination.",
+      deep: "Let us understand this clearly.\n\nCalcination is a metallurgical process in which an ore is heated in absence or limited supply of air.\n\nIt is mainly used for carbonate ores and hydrated ores.\n\nDuring calcination:\n- Carbonates lose CO₂\n- Hydroxides lose H₂O\n\nNow look at the options:\n\nOption (d): MgCO₃ → MgO + CO₂\n\nThis shows decomposition of a carbonate into oxide and CO₂.\n\nThis is exactly what happens during calcination.\n\nOther options involve oxidation or roasting.\n\nTherefore, the correct answer is MgCO₃ → MgO + CO₂."
     }
   },
   {
@@ -30,38 +30,33 @@ export const bitsatMetallurgyQuestions: PYQQuestion[] = [
     topic: "Metal extracted by cyanide process",
     year: 2017,
     questionText: "Which of the following metal is leached by cyanide process?",
-    options: [
-      "Ag",
-      "Na",
-      "Al",
-      "Cu"
-    ],
+    options: ["Ag", "Na", "Al", "Cu"],
     correctAnswer: "Ag",
     explanation: {
-      quick: "Use the main concept from Metal extracted by cyanide process and apply it directly. The correct answer is Ag.",
-      standard: "We solve this using the main idea from Metal extracted by cyanide process. First identify what the question is asking, then use the correct rule, formula, or concept step by step. After substituting the given information carefully, we get the final answer as Ag.",
-      deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Metal extracted by cyanide process.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Metal extracted by cyanide process and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as Ag.\n\nExtra understanding:\nQuestions from Metal extracted by cyanide process often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is Ag."
+      quick: "Silver and gold are extracted using cyanide leaching process.",
+      standard: "The cyanide process is used for extraction of noble metals like gold and silver. These metals form soluble complexes with cyanide ions, allowing them to be separated from ores.",
+      deep: "Let us understand the cyanide process.\n\nThe cyanide process is used for extraction of precious metals like gold (Au) and silver (Ag).\n\nIn this process, the metal reacts with cyanide ion in presence of oxygen to form a soluble complex.\n\nFor silver:\n4Ag + 8CN⁻ + O₂ + 2H₂O → 4[Ag(CN)₂]⁻ + 4OH⁻\n\nThis soluble complex allows separation of silver from the ore.\n\nAmong the given options, only silver (Ag) is extracted using this method.\n\nTherefore, the correct answer is Ag."
+    }
+  },
+  {
+    id: "bitsat-2018-chemistry-metallurgy-003",
+    exam: "BITSAT",
+    subject: "Chemistry",
+    chapter: "Metallurgy",
+    topic: "Hall-Heroult Process",
+    year: 2018,
+    questionText: "Incorrect statement about Hall-Heroult process is",
+    options: [
+      "CO and CO₂ are produced",
+      "Al₂O₃ + CaF₂ lowers melting point",
+      "Al³⁺ reduced at cathode",
+      "Na₃AlF₆ serves as electrolyte"
+    ],
+    correctAnswer: "Na₃AlF₆ serves as electrolyte",
+    explanation: {
+      quick: "Cryolite acts mainly as solvent, not the primary electrolyte.",
+      standard: "In the Hall-Heroult process, Al₂O₃ is dissolved in molten cryolite (Na₃AlF₆). Cryolite lowers melting point and increases conductivity but Al₂O₃ provides the ions for electrolysis. Hence calling cryolite the electrolyte is incorrect.",
+      deep: "Let us understand the Hall-Heroult process step by step.\n\nThis process is used for extraction of aluminium from alumina (Al₂O₃).\n\nPure Al₂O₃ has a very high melting point (~2000°C), so it is dissolved in molten cryolite (Na₃AlF₆).\n\nRole of cryolite:\n- Lowers melting point\n- Increases electrical conductivity\n- Acts as a solvent medium\n\nNow electrolysis occurs:\n\nAt cathode:\nAl³⁺ + 3e⁻ → Al (reduction)\n\nAt anode:\nO²⁻ reacts with carbon to form CO and CO₂\n\nSo statements (a), (b), and (c) are correct.\n\nBut saying Na₃AlF₆ acts as the electrolyte is incorrect, because the actual ions undergoing electrolysis come from Al₂O₃.\n\nTherefore, the incorrect statement is:\nNa₃AlF₆ serves as electrolyte."
     }
   }
-{
-  id: "bitsat-2018-chemistry-metallurgy-003",
-  exam: "BITSAT",
-  subject: "Chemistry",
-  chapter: "Metallurgy",
-  topic: "Hall-Heroult Process",
-  year: 2018,
-  questionText: "Incorrect statement about Hall-Heroult process is",
-  options: [
-    "CO and CO₂ are produced",
-    "Al₂O₃ + CaF₂ lowers melting point",
-    "Al³⁺ reduced at cathode",
-    "Na₃AlF₆ serves as electrolyte"
-  ],
-  correctAnswer: "Na₃AlF₆ serves as electrolyte",
-  explanation: {
-    quick: "Cryolite mainly acts as solvent",
-    standard: "Al₂O₃ provides ions; cryolite is medium",
-    deep: "Let us understand the question from the beginning…\n\nCryolite acts as solvent, not primary electrolyte.\n\nTherefore, the correct answer is option (d)."
-  }
-}
 ];

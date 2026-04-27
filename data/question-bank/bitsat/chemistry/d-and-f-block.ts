@@ -9,33 +9,28 @@ export const bitsatDAndFBlockQuestions: PYQQuestion[] = [
     topic: "Maximum magnetic moment among metal ions",
     year: 2017,
     questionText: "Which of the following shows maximum magnetic moment?",
-    options: [
-      "Mg²⁺",
-      "Ti³⁺",
-      "V³⁺",
-      "Fe²⁺"
-    ],
+    options: ["Mg²⁺", "Ti³⁺", "V³⁺", "Fe²⁺"],
     correctAnswer: "Fe²⁺",
     explanation: {
-      quick: "Use the main concept from Maximum magnetic moment among metal ions and apply it directly. The correct answer is Fe²⁺.",
-      standard: "We solve this using the main idea from Maximum magnetic moment among metal ions. First identify what the question is asking, then use the correct rule, formula, or concept step by step. After substituting the given information carefully, we get the final answer as Fe²⁺.",
-      deep: "Let us understand the question from the beginning.\n\nThis question belongs to Chemistry, and the main concept involved is Maximum magnetic moment among metal ions.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Maximum magnetic moment among metal ions and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as Fe²⁺.\n\nExtra understanding:\nQuestions from Maximum magnetic moment among metal ions often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is Fe²⁺."
+      quick: "Magnetic moment depends on the number of unpaired electrons. Fe²⁺ has the maximum unpaired electrons among the given ions.",
+      standard: "Mg²⁺ has no unpaired electrons, Ti³⁺ has one unpaired electron, V³⁺ has two unpaired electrons, and Fe²⁺ has four unpaired electrons. More unpaired electrons means higher magnetic moment. Therefore, Fe²⁺ has the maximum magnetic moment.",
+      deep: "Let us solve this step by step.\n\nMagnetic moment mainly depends on the number of unpaired electrons.\n\nThe spin-only magnetic moment is given by:\nμ = √[n(n + 2)] BM\n\nwhere n is the number of unpaired electrons.\n\nNow check each ion:\n\nMg²⁺:\nMagnesium has configuration [Ne]3s². Mg²⁺ loses two electrons and becomes [Ne]. So it has 0 unpaired electrons.\n\nTi³⁺:\nTitanium is [Ar]3d²4s². Ti³⁺ becomes 3d¹. So it has 1 unpaired electron.\n\nV³⁺:\nVanadium is [Ar]3d³4s². V³⁺ becomes 3d². So it has 2 unpaired electrons.\n\nFe²⁺:\nIron is [Ar]3d⁶4s². Fe²⁺ becomes 3d⁶. In the free ion/high-spin case, it has 4 unpaired electrons.\n\nSince Fe²⁺ has the maximum number of unpaired electrons, it has the maximum magnetic moment.\n\nTherefore, the correct answer is Fe²⁺."
+    }
+  },
+  {
+    id: "bitsat-2018-chemistry-df-block-002",
+    exam: "BITSAT",
+    subject: "Chemistry",
+    chapter: "d and f Block",
+    topic: "Actinoids",
+    year: 2018,
+    questionText: "Which actinoid does not have stable electronic configuration?",
+    options: ["Protactinium", "Nobelium", "Americium", "Lawrencium"],
+    correctAnswer: "Protactinium",
+    explanation: {
+      quick: "Protactinium does not have the comparatively stable half-filled or fully-filled f-subshell arrangement seen in some other actinoids.",
+      standard: "Stable electronic configurations are usually associated with half-filled or fully-filled subshells. Among the given actinoids, Protactinium does not get such extra stability, while elements like Americium and Nobelium are comparatively stabilized due to favourable f-electron arrangements.",
+      deep: "Let us understand the idea behind this question.\n\nIn f-block elements, electronic configuration becomes important because half-filled and fully-filled f-subshells provide extra stability.\n\nFor actinoids, the 5f orbitals are filled gradually. Some actinoids get relatively stable configurations due to half-filled or fully-filled arrangements.\n\nFor example:\n- Americium is associated with a stable 5f⁷ arrangement.\n- Nobelium is associated with a stable 5f¹⁴ arrangement.\n\nThese configurations are more stable because half-filled and fully-filled subshells have symmetrical distribution and exchange energy stabilization.\n\nProtactinium does not have such a stable half-filled or fully-filled f-subshell configuration.\n\nTherefore, among the given options, Protactinium is the actinoid that does not have a stable electronic configuration.\n\nHence, the correct answer is Protactinium."
     }
   }
-{
-  id: "bitsat-2018-chemistry-df-block-002",
-  exam: "BITSAT",
-  subject: "Chemistry",
-  chapter: "d and f Block",
-  topic: "Actinoids",
-  year: 2018,
-  questionText: "Which actinoid does not have stable electronic configuration?",
-  options: ["Protactinium","Nobelium","Americium","Lawrencium"],
-  correctAnswer: "Protactinium",
-  explanation: {
-    quick: "Protactinium shows irregular configuration",
-    standard: "Others have relatively stable half/fully filled orbitals",
-    deep: "Let us understand the question from the beginning…\n\nProtactinium has unstable configuration compared to others.\n\nTherefore, the correct answer is Protactinium."
-  }
-}
 ];
