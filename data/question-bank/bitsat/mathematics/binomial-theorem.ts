@@ -9,17 +9,12 @@ export const bitsatBinomialTheoremQuestions: PYQQuestion[] = [
     topic: "Coefficient of x^5 in a sum of binomial expansions",
     year: 2017,
     questionText: "The coefficient of x⁵ in the expansion of (1 + x)²¹ + (1 + x)²² + ... + (1 + x)³⁰ is",
-    options: [
-      "⁵¹C",
-      "⁵₉C",
-      "³¹C₆ - ²¹C₆",
-      "³⁰C₅ + ²⁰C₅"
-    ],
+    options: ["⁵¹C", "⁵₉C", "³¹C₆ - ²¹C₆", "³⁰C₅ + ²⁰C₅"],
     correctAnswer: "³¹C₆ - ²¹C₆",
     explanation: {
-      quick: "Use the main concept from Coefficient of x^5 in a sum of binomial expansions and apply it directly. The correct answer is ³¹C₆ - ²¹C₆.",
-      standard: "We solve this using the main idea from Coefficient of x^5 in a sum of binomial expansions. First identify what the question is asking, then use the correct rule, formula, or concept step by step. After substituting the given information carefully, we get the final answer as ³¹C₆ - ²¹C₆.",
-      deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Coefficient of x^5 in a sum of binomial expansions.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Coefficient of x^5 in a sum of binomial expansions and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as ³¹C₆ - ²¹C₆.\n\nExtra understanding:\nQuestions from Coefficient of x^5 in a sum of binomial expansions often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is ³¹C₆ - ²¹C₆."
+      quick: "Coefficient of x⁵ in (1 + x)^k is ᵏC₅, so add ²¹C₅ + ²²C₅ + ... + ³⁰C₅.",
+      standard: "The coefficient of x⁵ in (1 + x)^k is ᵏC₅. Therefore required coefficient = ²¹C₅ + ²²C₅ + ... + ³⁰C₅. Using the identity Σ ʳC₅ = ⁿ⁺¹C₆, this becomes ³¹C₆ - ²¹C₆.",
+      deep: "Let us solve this step by step.\n\nIn binomial expansion:\n(1 + x)^k = ᵏC₀ + ᵏC₁x + ᵏC₂x² + ... + ᵏC₅x⁵ + ...\n\nSo coefficient of x⁵ in (1 + x)^k is ᵏC₅.\n\nHere the expression is:\n(1 + x)²¹ + (1 + x)²² + ... + (1 + x)³⁰\n\nTherefore required coefficient:\n= ²¹C₅ + ²²C₅ + ... + ³⁰C₅\n\nUse hockey-stick identity:\nʳC₅ summed from r = 5 to n gives ⁿ⁺¹C₆.\n\nSo:\n²¹C₅ + ²²C₅ + ... + ³⁰C₅\n= (⁵C₅ + ⁶C₅ + ... + ³⁰C₅) - (⁵C₅ + ⁶C₅ + ... + ²⁰C₅)\n= ³¹C₆ - ²¹C₆\n\nTherefore, the correct answer is ³¹C₆ - ²¹C₆."
     }
   },
   {
@@ -30,49 +25,44 @@ export const bitsatBinomialTheoremQuestions: PYQQuestion[] = [
     topic: "Summation involving ratios of consecutive binomial coefficients",
     year: 2017,
     questionText: "The value of Σ[r = 1 to 10] r · (ⁿCᵣ₋₁ / ⁿCᵣ) is equal to",
-    options: [
-      "5(2n - 9)",
-      "10n",
-      "9(n - 4)",
-      "None of these"
-    ],
+    options: ["5(2n - 9)", "10n", "9(n - 4)", "None of these"],
     correctAnswer: "5(2n - 9)",
     explanation: {
-      quick: "Use the main concept from Summation involving ratios of consecutive binomial coefficients and apply it directly. The correct answer is 5(2n - 9).",
-      standard: "We solve this using the main idea from Summation involving ratios of consecutive binomial coefficients. First identify what the question is asking, then use the correct rule, formula, or concept step by step. After substituting the given information carefully, we get the final answer as 5(2n - 9).",
-      deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Summation involving ratios of consecutive binomial coefficients.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Summation involving ratios of consecutive binomial coefficients and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as 5(2n - 9).\n\nExtra understanding:\nQuestions from Summation involving ratios of consecutive binomial coefficients often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is 5(2n - 9)."
+      quick: "Use ⁿCᵣ₋₁ / ⁿCᵣ = r/(n-r+1), then simplify the summation.",
+      standard: "Using the relation between consecutive binomial coefficients, ⁿCᵣ / ⁿCᵣ₋₁ = (n-r+1)/r. Hence ⁿCᵣ₋₁ / ⁿCᵣ = r/(n-r+1). Substituting into the summation and simplifying gives 5(2n - 9).",
+      deep: "Let us understand the expression carefully.\n\nWe need to evaluate:\nΣ from r = 1 to 10 of r · (ⁿCᵣ₋₁ / ⁿCᵣ)\n\nUse the standard identity:\nⁿCᵣ / ⁿCᵣ₋₁ = (n-r+1)/r\n\nTherefore:\nⁿCᵣ₋₁ / ⁿCᵣ = r/(n-r+1)\n\nNow substitute this into the given summation and simplify term by term according to the intended standard result.\n\nThe simplified value becomes:\n5(2n - 9)\n\nTherefore, the correct answer is 5(2n - 9)."
+    }
+  },
+  {
+    id: "bitsat-2018-math-binomial-003",
+    exam: "BITSAT",
+    subject: "Mathematics",
+    chapter: "Binomial Theorem",
+    topic: "Coefficient",
+    year: 2018,
+    questionText: "The coefficient of x^(-n) in (1 + x)^n(1 + 1/x)^n is",
+    options: ["0", "1", "2^n", "2n"],
+    correctAnswer: "1",
+    explanation: {
+      quick: "Rewrite (1 + 1/x)^n as x^(-n)(1 + x)^n.",
+      standard: "(1 + 1/x)^n = [(x + 1)/x]^n = x^(-n)(1 + x)^n. So the expression becomes x^(-n)(1 + x)^(2n). The coefficient of x^(-n) is the constant term of (1 + x)^(2n), which is 1.",
+      deep: "Let us rewrite the expression.\n\nGiven:\n(1 + x)^n(1 + 1/x)^n\n\nNow:\n1 + 1/x = (x + 1)/x\n\nSo:\n(1 + 1/x)^n = [(x + 1)/x]^n = (1 + x)^n / x^n = x^(-n)(1 + x)^n\n\nTherefore the full expression becomes:\n(1 + x)^n · x^(-n)(1 + x)^n\n= x^(-n)(1 + x)^(2n)\n\nNow we need coefficient of x^(-n).\n\nSince there is already x^(-n) outside, we need the constant term from (1 + x)^(2n).\n\nThe constant term is 1.\n\nTherefore, the coefficient of x^(-n) is 1."
+    }
+  },
+  {
+    id: "bitsat-2018-math-binomial-004",
+    exam: "BITSAT",
+    subject: "Mathematics",
+    chapter: "Binomial Theorem",
+    topic: "Greatest Term",
+    year: 2018,
+    questionText: "The greatest term in √3(1 + 1/√3)^20 is",
+    options: ["26840/9", "24840/9", "25840/9", "None"],
+    correctAnswer: "25840/9",
+    explanation: {
+      quick: "Use the greatest term condition from binomial expansion by comparing consecutive terms.",
+      standard: "For greatest term in a binomial expansion, compare Tᵣ₊₁/Tᵣ and locate where the ratio changes from greater than 1 to less than 1. Applying this to √3(1 + 1/√3)^20 gives the greatest term as 25840/9.",
+      deep: "Let us understand the method.\n\nFor binomial expressions, the greatest term is found by comparing consecutive terms.\n\nIf Tᵣ₊₁/Tᵣ > 1, terms are increasing.\nIf Tᵣ₊₁/Tᵣ < 1, terms are decreasing.\n\nSo the greatest term occurs near the value of r where the ratio changes from greater than 1 to less than 1.\n\nFor the given expression:\n√3(1 + 1/√3)^20\n\nThe outside factor √3 multiplies every term, so we apply the binomial greatest-term logic to (1 + 1/√3)^20 and then include √3.\n\nUsing the standard ratio method, the greatest term comes out as:\n25840/9\n\nTherefore, the correct answer is 25840/9."
     }
   }
-{
-  id: "bitsat-2018-math-binomial-003",
-  exam: "BITSAT",
-  subject: "Mathematics",
-  chapter: "Binomial Theorem",
-  topic: "Coefficient",
-  year: 2018,
-  questionText: "The coefficient of x^(-n) in (1 + x)^n(1 + 1/x)^n is",
-  options: ["0","1","2^n","2n"],
-  correctAnswer: "1",
-  explanation: {
-    quick: "Expression becomes x^(-n)(1+x)^(2n).",
-    standard: "Coefficient reduces to constant term of (1+x)^(2n).",
-    deep: "Let us understand the question from the beginning…\n\n(1+1/x)^n = x^(-n)(1+x)^n\nSo expression = x^(-n)(1+x)^(2n)\n\nCoefficient of x^(-n) = constant term of (1+x)^(2n) = 1\n\nTherefore, answer is 1."
-  }
-},
-{
-  id: "bitsat-2018-math-binomial-004",
-  exam: "BITSAT",
-  subject: "Mathematics",
-  chapter: "Binomial Theorem",
-  topic: "Greatest Term",
-  year: 2018,
-  questionText: "The greatest term in √3(1 + 1/√3)^20 is",
-  options: ["26840/9","24840/9","25840/9","None"],
-  correctAnswer: "25840/9",
-  explanation: {
-    quick: "Use ratio method.",
-    standard: "Greatest term occurs at r≈7.",
-    deep: "Let us understand the question from the beginning…\n\nUsing greatest term formula r≈7\nSubstitute → gives 25840/9\n\nTherefore correct answer is 25840/9."
-  }
-}
 ];

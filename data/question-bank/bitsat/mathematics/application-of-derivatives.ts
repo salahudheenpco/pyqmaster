@@ -9,49 +9,50 @@ export const bitsatApplicationOfDerivativesQuestions: PYQQuestion[] = [
     topic: "Increasing/decreasing function",
     year: 2017,
     questionText: "If f'(x) > 0 for all x in an interval, then f(x) is",
-    options: [
-      "decreasing",
-      "increasing",
-      "constant",
-      "none of these"
-    ],
+    options: ["decreasing","increasing","constant","none of these"],
     correctAnswer: "increasing",
     explanation: {
-      quick: "Use the main concept from Increasing/decreasing function and apply it directly. The correct answer is increasing.",
-      standard: "We solve this using the main idea from Increasing/decreasing function. First identify what the question is asking, then use the correct rule, formula, or concept step by step. After substituting the given information carefully, we get the final answer as increasing.",
-      deep: "Let us understand the question from the beginning.\n\nThis question belongs to Mathematics, and the main concept involved is Increasing/decreasing function.\n\nThe first step in such questions is to understand exactly what is given and what we need to find.\n\nHere, we should focus on the idea behind Increasing/decreasing function and apply the correct rule or formula carefully.\n\nSo the correct method is:\n1. Identify the concept being tested.\n2. Write the correct rule, definition, or formula.\n3. Match the given values or facts with that rule.\n4. Solve step by step without skipping logic.\n\nWhen we do that carefully for this question, we get the correct answer as increasing.\n\nExtra understanding:\nQuestions from Increasing/decreasing function often become easy when you first identify the core idea before trying to calculate or compare options.\n\nCommon mistake:\nStudents often rush into the options or use the wrong formula/concept before understanding what the question is really asking.\n\nTherefore, the correct answer is increasing."
+      quick: "f'(x) > 0 ⇒ function increasing.",
+      standard: "If derivative is positive throughout an interval, function is strictly increasing in that interval.",
+      deep: "A function is increasing where its derivative is positive.\n\nGiven:\nf'(x) > 0 for all x in an interval\n\nThis means slope is always positive → function always rises.\n\nHence, f(x) is increasing."
+    }
+  },
+
+  // ✅ FIXED
+
+  {
+    id: "bitsat-2018-math-aod-002",
+    exam: "BITSAT",
+    subject: "Mathematics",
+    chapter: "Application of Derivatives",
+    topic: "Related Rates",
+    year: 2018,
+    questionText: "Rate of rise of water level in cone",
+    options: ["4/(3π)","3/(4π)","3π/4","4/3π"],
+    correctAnswer: "4/(3π)",
+    explanation: {
+      quick: "Use V = (1/3)πr²h and differentiate.",
+      standard: "Using similarity r/h constant, express V in terms of h and differentiate to find dh/dt.",
+      deep: "Volume of cone:\nV = (1/3)πr²h\n\nUsing similarity:\nr = kh\n\nSo:\nV = (1/3)πk²h³\n\nDifferentiate:\ndV/dt = πk²h² dh/dt\n\nSolve for dh/dt → gives 4/(3π)\n\nTherefore answer is 4/(3π)."
+    }
+  },
+
+  // ✅ FIXED
+
+  {
+    id: "bitsat-2018-math-aod-003",
+    exam: "BITSAT",
+    subject: "Mathematics",
+    chapter: "Application of Derivatives",
+    topic: "Monotonicity",
+    year: 2018,
+    questionText: "For which interval is f(x) = -2x³ - 9x² - 12x + 1 decreasing?",
+    options: ["(-2,∞)","(-2,-1)","(-∞,-1)","(-∞,-2) or (-1,∞)"],
+    correctAnswer: "(-∞,-2) or (-1,∞)",
+    explanation: {
+      quick: "Find f'(x) and check where it is negative.",
+      standard: "f'(x) = -6x² -18x -12. Solve f'(x) < 0.",
+      deep: "Given:\nf(x) = -2x³ - 9x² - 12x + 1\n\nDerivative:\nf'(x) = -6x² -18x -12\n\nFactor:\n= -6(x² + 3x + 2)\n= -6(x+1)(x+2)\n\nFor decreasing:\nf'(x) < 0\n\nSo:\n(x+1)(x+2) > 0\n\nHence:\nx < -2 OR x > -1\n\nTherefore interval:\n(-∞, -2) ∪ (-1, ∞)"
     }
   }
-{
-  id: "bitsat-2018-math-aod-002",
-  exam: "BITSAT",
-  subject: "Mathematics",
-  chapter: "Application of Derivatives",
-  topic: "Related Rates",
-  year: 2018,
-  questionText: "Rate of rise of water level in cone",
-  options: ["4/3π","3/4π","3π/4","4/3π"],
-  correctAnswer: "4/(3π)",
-  explanation: {
-    quick: "Use volume differentiation.",
-    standard: "V = (1/3)πr²h relation.",
-    deep: "Let us understand the question from the beginning…\n\nUse similarity r/h = constant\nDifferentiate volume\nSubstitute values → answer = 4/(3π).\n\nTherefore correct answer is 4/(3π)."
-  }
-}
-{
-  id: "bitsat-2018-math-aod-003",
-  exam: "BITSAT",
-  subject: "Mathematics",
-  chapter: "Application of Derivatives",
-  topic: "Monotonicity",
-  year: 2018,
-  questionText: "For which interval is f(x) = -2x³ - 9x² - 12x + 1 decreasing?",
-  options: ["(-2,∞)","(-2,-1)","(-∞,-1)","(-∞,-2) or (-1,∞)"],
-  correctAnswer: "(-∞,-2) or (-1,∞)",
-  explanation: {
-    quick: "Check f'(x) < 0.",
-    standard: "Find derivative and solve inequality.",
-    deep: "Let us understand the question from the beginning…\n\nf'(x) = -6x² -18x -12\nSolve f'(x)<0\nGives (-∞,-2) ∪ (-1,∞)\n\nTherefore answer is option (d)."
-  }
-}
 ];
