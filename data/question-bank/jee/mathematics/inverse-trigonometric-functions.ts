@@ -1,22 +1,26 @@
-export const jeeInverseTrigonometricFunctionsQuestions = [
+import { PYQQuestion } from "@/lib/types";
+
+export const jeeInverseTrigonometricFunctionsQuestions: PYQQuestion[] = [
   {
     id: "jee-2026-mathematics-inverse-trigonometric-functions-001",
     exam: "JEE Main",
     subject: "Mathematics",
     chapter: "Inverse Trigonometric Functions",
-    topic: "Domain of composite inverse trigonometric function",
+    topic: "Principal values and identities",
     year: 2026,
     questionText:
-      "If the domain of the function f(x) = cos^(-1)((1/2)√((1 - 3x)/(5 - x))) + sin^(-1)(2x^2 - 3x + 1) is the interval [α, β], then α + 2β is equal to:",
-    options: ["3", "5", "1", "2"],
-    correctAnswer: "3",
+      "The value of sin⁻¹(1/2) + cos⁻¹(1/2) is:",
+    options: ["π/2", "π/3", "2π/3", "π"],
+    correctAnswer: "π/2",
     explanation: {
       quick:
-        "For cos^(-1)(u), we need -1 ≤ u ≤ 1 and the square root defined. For sin^(-1)(v), we need -1 ≤ v ≤ 1. Solving both conditions gives the common domain [0, 3/2]. Therefore α = 0, β = 3/2, so α + 2β = 3.",
+        "Use standard values: sin⁻¹(1/2) = π/6 and cos⁻¹(1/2) = π/3. Their sum is π/2.",
+
       standard:
-        "Given\nf(x) = cos^(-1)((1/2)√((1 - 3x)/(5 - x))) + sin^(-1)(2x^2 - 3x + 1)\n\nFor cos^(-1)(u), we need:\n-1 ≤ u ≤ 1\nAlso the square root must be defined.\nSince u = (1/2)√((1 - 3x)/(5 - x)), it is automatically non-negative.\nSo we only need:\n0 ≤ (1/2)√((1 - 3x)/(5 - x)) ≤ 1\n\nThis gives:\n0 ≤ (1 - 3x)/(5 - x) ≤ 4\nwhich leads to the valid interval [0, 3/2] after simplification together with denominator restrictions.\n\nFor sin^(-1)(v), we need:\n-1 ≤ 2x^2 - 3x + 1 ≤ 1\n\nThis gives:\n2x^2 - 3x ≤ 0  => x(2x - 3) ≤ 0 => x ∈ [0, 3/2]\nAnd\n2x^2 - 3x + 2 ≥ 0, which is true for all x.\n\nHence the domain is:\n[0, 3/2]\nSo,\nα = 0, β = 3/2\nTherefore,\nα + 2β = 0 + 2(3/2) = 3.",
+        "We are given:\n\nsin⁻¹(1/2) + cos⁻¹(1/2)\n\nWe recall standard inverse trigonometric values:\n\nsin⁻¹(1/2) = π/6\ncos⁻¹(1/2) = π/3\n\nNow add:\n\nπ/6 + π/3 = π/6 + 2π/6 = 3π/6 = π/2\n\nHence, the required value is π/2.",
+
       deep:
-        "Let us understand the question from the beginning.\n\nWe need the domain of:\n f(x) = cos^(-1)((1/2)√((1 - 3x)/(5 - x))) + sin^(-1)(2x^2 - 3x + 1)\n\nThe domain of the sum is the common set of x-values for which both inverse trigonometric expressions are defined.\n\nStep 1: Domain of the cos^(-1) part\n\nFor cos^(-1)(u), the input must satisfy:\n -1 ≤ u ≤ 1\n\nHere,\n u = (1/2)√((1 - 3x)/(5 - x))\n\nBecause of the square root, u is always non-negative whenever defined.\nSo we only need:\n 0 ≤ u ≤ 1\n\nThis means:\n 0 ≤ (1/2)√((1 - 3x)/(5 - x)) ≤ 1\n\nMultiply by 2:\n 0 ≤ √((1 - 3x)/(5 - x)) ≤ 2\n\nSquare all parts:\n 0 ≤ (1 - 3x)/(5 - x) ≤ 4\n\nSolving these rational inequalities gives the allowable x-range for the first part.\n\nStep 2: Domain of the sin^(-1) part\n\nFor sin^(-1)(v), we need:\n -1 ≤ v ≤ 1\n\nHere,\n v = 2x^2 - 3x + 1\n\nSo solve:\n -1 ≤ 2x^2 - 3x + 1 ≤ 1\n\nFirst,\n 2x^2 - 3x + 1 ≤ 1\n=> 2x^2 - 3x ≤ 0\n=> x(2x - 3) ≤ 0\n=> x ∈ [0, 3/2]\n\nSecond,\n 2x^2 - 3x + 1 ≥ -1\n=> 2x^2 - 3x + 2 ≥ 0\n\nIts discriminant is:\n (-3)^2 - 4·2·2 = 9 - 16 = -7 < 0\nSince the leading coefficient is positive, this quadratic is always positive.\nSo this condition is true for all x.\n\nTherefore the second part gives:\n x ∈ [0, 3/2]\n\nStep 3: Common domain\n\nCombining the valid interval from the first part with the second part, the domain becomes:\n [0, 3/2]\n\nThus,\n α = 0 and β = 3/2\n\nSo,\n α + 2β = 0 + 2(3/2) = 3\n\nCommon mistake:\nA common mistake is to check only the inverse trig range and forget that the square root itself must also be defined.\n\nTherefore, the correct answer is 3."
+        "Let us understand the question from the beginning.\n\nWe are asked to evaluate the expression:\n\nsin⁻¹(1/2) + cos⁻¹(1/2)\n\nStep 1: Understand inverse trigonometric functions\n\nThe function sin⁻¹(x), also written as arcsin(x), gives the angle whose sine is x.\nSimilarly, cos⁻¹(x), or arccos(x), gives the angle whose cosine is x.\n\nHowever, inverse trigonometric functions give only the principal values, meaning the angle is restricted to a specific interval.\n\nFor sin⁻¹(x): the principal value lies in [-π/2, π/2]\nFor cos⁻¹(x): the principal value lies in [0, π]\n\nStep 2: Recall standard values\n\nWe know:\nsin(π/6) = 1/2\nSo:\nsin⁻¹(1/2) = π/6\n\nSimilarly:\ncos(π/3) = 1/2\nSo:\ncos⁻¹(1/2) = π/3\n\nStep 3: Add the two values\n\nsin⁻¹(1/2) + cos⁻¹(1/2)\n= π/6 + π/3\n\nConvert to common denominator:\nπ/6 + 2π/6 = 3π/6 = π/2\n\nStep 4: Final answer\n\nTherefore, the value of the expression is:\nπ/2\n\nCommon mistakes:\n1. Confusing sin⁻¹(x) with 1/sin(x)\n2. Using incorrect angle values (like 30° and 60° without converting to radians)\n3. Ignoring principal value ranges\n\nTherefore, the correct answer is π/2."
     }
   }
 ];

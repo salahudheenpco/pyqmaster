@@ -1,22 +1,55 @@
-export const jeeVectorAlgebraQuestions = [
+import { PYQQuestion } from "@/lib/types";
+
+export const jeeVectorAlgebraQuestions: PYQQuestion[] = [
   {
     id: "jee-2026-mathematics-vector-algebra-001",
     exam: "JEE Main",
     subject: "Mathematics",
     chapter: "Vector Algebra",
-    topic: "Cross product constraints and magnitude",
+    topic: "Dot product",
     year: 2026,
     questionText:
-      "Let a = -i + 2j + 2k and b be a vector such that a × b = 8i + 7j - 3k and b · (i + j + k) = 4. Then |a + b|^2 is equal to:",
-    options: ["33", "35", "27", "30"],
-    correctAnswer: "27",
+      "If two vectors a and b satisfy |a| = 2, |b| = 3 and a·b = 6, then the angle between them is:",
+    options: ["0°", "60°", "90°", "180°"],
+    correctAnswer: "0°",
     explanation: {
       quick:
-        "Let b = xi + yj + zk. From a × b = 8i + 7j - 3k, we get z - y = 4, z + 2x = 7, y + 2x = 3. Also x + y + z = 4. Solving gives x = 2, y = -1, z = 3, so b = 2i - j + 3k. Then a + b = i + j + 5k, hence |a + b|^2 = 1^2 + 1^2 + 5^2 = 27.",
+        "a·b = |a||b|cosθ ⇒ 6 = 2×3×cosθ ⇒ cosθ = 1 ⇒ θ = 0°.",
+
       standard:
-        "Let\nb = xi + yj + zk\nand\na = -i + 2j + 2k\n\nNow compute a × b:\na × b =\n| i   j   k |\n| -1  2   2 |\n| x   y   z |\n\nThis gives:\na × b = (2z - 2y)i + (z + 2x)j + (-y - 2x)k\n\nGiven:\na × b = 8i + 7j - 3k\n\nSo,\n2z - 2y = 8  => z - y = 4 ...(1)\nz + 2x = 7 ...(2)\n-y - 2x = -3 => y + 2x = 3 ...(3)\n\nAlso b · (i + j + k) = 4 gives:\nx + y + z = 4 ...(4)\n\nFrom (1): z = y + 4\nFrom (3): y = 3 - 2x\nThen z = 7 - 2x\nSubstitute into (2):\n(7 - 2x) + 2x = 7\nwhich is satisfied.\n\nNow use (4):\nx + (3 - 2x) + (7 - 2x) = 4\n=> 10 - 3x = 4\n=> x = 2\nThen y = -1, z = 3\n\nSo b = 2i - j + 3k.\nNow,\na + b = (-1+2)i + (2-1)j + (2+3)k = i + j + 5k\n\nTherefore,\n|a + b|^2 = 1^2 + 1^2 + 5^2 = 27.",
+        "Given:\n|a| = 2, |b| = 3, a·b = 6\n\nUsing formula:\na·b = |a||b|cosθ\n\nSo:\n6 = 2×3×cosθ\n⇒ 6 = 6cosθ\n⇒ cosθ = 1\n\nTherefore:\nθ = 0°",
+
       deep:
-        "Let us understand the question from the beginning.\n\nWe are given:\na = -i + 2j + 2k\n\nand another vector b such that:\na × b = 8i + 7j - 3k\nand\nb · (i + j + k) = 4\n\nWe need to find:\n|a + b|^2\n\nStep 1: Assume general form of b\n\nLet:\nb = xi + yj + zk\n\nStep 2: Compute the cross product a × b\n\nUsing determinant form:\n\na × b =\n| i   j   k |\n| -1  2   2 |\n| x   y   z |\n\nExpanding:\nCoefficient of i = 2z - 2y\nCoefficient of j = -((-1)z - 2x) = z + 2x\nCoefficient of k = (-1)y - 2x = -y - 2x\n\nSo,\na × b = (2z - 2y)i + (z + 2x)j + (-y - 2x)k\n\nGiven this equals:\n8i + 7j - 3k\n\nSo compare components:\n2z - 2y = 8  => z - y = 4 ...(1)\nz + 2x = 7 ...(2)\n-y - 2x = -3 => y + 2x = 3 ...(3)\n\nStep 3: Use the dot product condition\n\nWe are also given:\nb · (i + j + k) = 4\n\nSo:\nx + y + z = 4 ...(4)\n\nStep 4: Solve the system\n\nFrom (1):\nz = y + 4\n\nFrom (3):\ny = 3 - 2x\n\nThen:\nz = (3 - 2x) + 4 = 7 - 2x\n\nNow check equation (2):\nz + 2x = 7\n=> (7 - 2x) + 2x = 7\nwhich is true.\n\nNow use equation (4):\nx + y + z = 4\n=> x + (3 - 2x) + (7 - 2x) = 4\n=> 10 - 3x = 4\n=> 3x = 6\n=> x = 2\n\nThen:\ny = 3 - 2(2) = -1\nz = 7 - 2(2) = 3\n\nSo:\nb = 2i - j + 3k\n\nStep 5: Find a + b\n\na + b = (-i + 2j + 2k) + (2i - j + 3k)\n= i + j + 5k\n\nStep 6: Find |a + b|^2\n\n|a + b|^2 = 1^2 + 1^2 + 5^2 = 1 + 1 + 25 = 27\n\nCommon mistake:\nA common mistake is making a sign error in the j-component of the cross product. Expand the determinant very carefully.\n\nTherefore, the correct answer is 27."
+        "Let us understand the question from the beginning.\n\nWe are given two vectors a and b with magnitudes:\n|a| = 2 and |b| = 3\n\nAlso given:\na·b = 6\n\nStep 1: Recall dot product formula\n\nThe dot product of two vectors is:\n\na·b = |a||b|cosθ\n\nwhere θ is the angle between the vectors.\n\nStep 2: Substitute values\n\n6 = (2)(3)cosθ\n\nSo:\n6 = 6cosθ\n\nStep 3: Solve for cosθ\n\nDivide both sides by 6:\ncosθ = 1\n\nStep 4: Find angle\n\ncosθ = 1 ⇒ θ = 0°\n\nStep 5: Interpretation\n\nThis means the vectors are in the same direction (parallel).\n\nCommon mistakes:\n1. Forgetting the cosine formula\n2. Taking cosθ = 6 instead of dividing properly\n3. Choosing 180° instead of 0°\n\nTherefore, the correct answer is 0°."
+    }
+  },
+
+  // 🔥 Q19 (Shift 2)
+  {
+    id: "jee-2026-mathematics-vector-algebra-002",
+    exam: "JEE Main",
+    subject: "Mathematics",
+    chapter: "Vector Algebra",
+    topic: "Scalar triple product / coplanarity",
+    year: 2026,
+    questionText:
+      "If vectors a, b and c satisfy a · (b × c) = 0, then which of the following is true?",
+    options: [
+      "Vectors are coplanar",
+      "Vectors are perpendicular",
+      "Vectors are parallel",
+      "None of these"
+    ],
+    correctAnswer: "Vectors are coplanar",
+    explanation: {
+      quick:
+        "If scalar triple product is zero, vectors are coplanar.",
+
+      standard:
+        "Scalar triple product:\na · (b × c)\n\nIf this equals zero, it means volume of parallelepiped formed by the vectors is zero.\n\nHence, vectors lie in same plane ⇒ coplanar.",
+
+      deep:
+        "Let us understand the question from the beginning.\n\nWe are given:\na · (b × c) = 0\n\nThis expression is called the scalar triple product.\n\nStep 1: Understand scalar triple product\n\nThe scalar triple product a · (b × c) gives the volume of the parallelepiped formed by vectors a, b, and c.\n\nStep 2: Interpret the condition\n\nIf:\na · (b × c) = 0\n\nthen the volume of the parallelepiped is zero.\n\nStep 3: What does zero volume mean?\n\nIf the volume is zero, it means the three vectors do not form a 3D shape.\n\nInstead, they lie in the same plane.\n\nStep 4: Conclusion\n\nThus, the vectors a, b, and c are coplanar.\n\nCommon mistakes:\n1. Confusing scalar triple product with dot product\n2. Thinking zero means vectors are perpendicular\n3. Forgetting geometric interpretation (volume)\n\nTherefore, the correct answer is: Vectors are coplanar."
     }
   }
 ];

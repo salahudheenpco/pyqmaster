@@ -86,6 +86,12 @@ import jeeTrigonometricFunctionsQuestions from "@/data/question-bank/jee/mathema
 import jeeInverseTrigonometricFunctionsQuestions from "@/data/question-bank/jee/mathematics/inverse-trigonometric-functions";
 import jeeDifferentialEquationsQuestions from "@/data/question-bank/jee/mathematics/differential-equations";
 import jeeProbabilityQuestions from "@/data/question-bank/jee/mathematics/probability";
+import jeeSetsQuestions from "@/data/question-bank/jee/mathematics/sets";
+import jeeAreaUnderCurvesQuestions from "@/data/question-bank/jee/mathematics/area-under-curves";
+import jeeApplicationOfDerivativesQuestions from "@/data/question-bank/jee/mathematics/application-of-derivatives";
+import jeeMatricesQuestions from "@/data/question-bank/jee/mathematics/matrices";
+import jeeNumberTheoryQuestions from "@/data/question-bank/jee/mathematics/number-theory";
+import jeeSystemOfLinearEquationsQuestions from "@/data/question-bank/jee/mathematics/system-of-linear-equations";
 
 // JEE Physics
 import jeeElectrostaticsQuestions from "@/data/question-bank/jee/physics/electrostatics";
@@ -213,6 +219,12 @@ export const allQuestions: PYQQuestion[] = [
   ...jeeInverseTrigonometricFunctionsQuestions,
   ...jeeDifferentialEquationsQuestions,
   ...jeeProbabilityQuestions,
+  ...jeeSetsQuestions,
+  ...jeeAreaUnderCurvesQuestions,
+  ...jeeApplicationOfDerivativesQuestions,
+  ...jeeMatricesQuestions,
+  ...jeeNumberTheoryQuestions,
+  ...jeeSystemOfLinearEquationsQuestions,
 
   // JEE Physics
   ...jeeElectrostaticsQuestions,
