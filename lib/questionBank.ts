@@ -2,6 +2,7 @@ import type { PYQQuestion } from "@/lib/types";
 
 // BITSAT
 // Physics
+import { bitsatAlternatingCurrentQuestions } from "@/data/question-bank/bitsat/physics/alternating-current";
 import { bitsatCapacitanceQuestions } from "@/data/question-bank/bitsat/physics/capacitance";
 import { bitsatCurrentElectricityQuestions } from "@/data/question-bank/bitsat/physics/current-electricity";
 import { bitsatElectromagneticInductionQuestions } from "@/data/question-bank/bitsat/physics/electromagnetic-induction";
@@ -135,6 +136,7 @@ import jeeChemicalBondingQuestions from "@/data/question-bank/jee/chemistry/chem
 
 export const allQuestions: PYQQuestion[] = [
   // BITSAT Physics
+  ...bitsatAlternatingCurrentQuestions,
   ...bitsatCapacitanceQuestions,
   ...bitsatCurrentElectricityQuestions,
   ...bitsatElectromagneticInductionQuestions,
