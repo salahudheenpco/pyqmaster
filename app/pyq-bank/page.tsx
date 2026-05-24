@@ -28,6 +28,7 @@ function getOptionText(option: string | QuestionOption): string {
 function getQuestionText(question: PYQQuestion): string {
   const maybeLegacyQuestion = (question as PYQQuestion & { question?: string })
     .question;
+
   return (
     question.questionText ||
     maybeLegacyQuestion ||
@@ -46,6 +47,7 @@ function getCorrectAnswerValue(question: PYQQuestion): string {
     if (isOptionObject(option)) {
       return option.id === correct || option.text === correct;
     }
+
     return option === correct;
   });
 
@@ -67,6 +69,7 @@ function getCorrectAnswerText(question: PYQQuestion): string {
     if (isOptionObject(option)) {
       return option.id === correct || option.text === correct;
     }
+
     return option === correct;
   });
 
@@ -95,6 +98,15 @@ function getExplanationText(
   );
 }
 
+function formatTime(totalSeconds: number): string {
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+
+  return `${minutes.toString().padStart(2, "0")}:${seconds
+    .toString()
+    .padStart(2, "0")}`;
+}
+
 export default function PyqBankPage() {
   const [selectedExam, setSelectedExam] = useState("all");
   const [selectedSubject, setSelectedSubject] = useState("all");
@@ -105,6 +117,7 @@ export default function PyqBankPage() {
   const [depth, setDepth] = useState<ExplanationDepth>("standard");
   const [submitted, setSubmitted] = useState(false);
   const [page, setPage] = useState(1);
+  const [timeSpent, setTimeSpent] = useState(0);
 
   const previewRef = useRef<HTMLElement | null>(null);
   const practiceRef = useRef<HTMLElement | null>(null);
@@ -129,6 +142,7 @@ export default function PyqBankPage() {
       const examMatch = selectedExam === "all" || q.exam === selectedExam;
       const subjectMatch =
         selectedSubject === "all" || q.subject === selectedSubject;
+
       return examMatch && subjectMatch;
     });
 
@@ -210,16 +224,35 @@ export default function PyqBankPage() {
 
     if (!stillExists) {
       setSelectedQuestionId(filteredQuestions[0].id);
-      setSelectedOption(null);
-      setDepth("standard");
-      setSubmitted(false);
+      resetAnswerState();
     }
   }, [filteredQuestions, selectedQuestionId]);
+
+  useEffect(() => {
+    setTimeSpent(0);
+
+    if (!selectedQuestionId) return;
+
+    const timer = window.setInterval(() => {
+      setTimeSpent((prev) => prev + 1);
+    }, 1000);
+
+    return () => window.clearInterval(timer);
+  }, [selectedQuestionId]);
 
   const selectedQuestion =
     filteredQuestions.find((q) => q.id === selectedQuestionId) ??
     allQuestions.find((q) => q.id === selectedQuestionId) ??
     null;
+
+  const selectedQuestionIndex = selectedQuestion
+    ? filteredQuestions.findIndex((q) => q.id === selectedQuestion.id)
+    : -1;
+
+  const hasPreviousQuestion = selectedQuestionIndex > 0;
+  const hasNextQuestion =
+    selectedQuestionIndex >= 0 &&
+    selectedQuestionIndex < filteredQuestions.length - 1;
 
   const selectedExplanation = selectedQuestion
     ? getExplanationText(selectedQuestion, depth)
@@ -276,6 +309,36 @@ export default function PyqBankPage() {
   }
 
   function handleResetAnswer() {
+    resetAnswerState();
+
+    setTimeout(() => {
+      practiceRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 100);
+  }
+
+  function handlePreviousQuestion() {
+    if (!hasPreviousQuestion) return;
+
+    const previousQuestion = filteredQuestions[selectedQuestionIndex - 1];
+    setSelectedQuestionId(previousQuestion.id);
+    resetAnswerState();
+
+    setTimeout(() => {
+      practiceRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 100);
+  }
+
+  function handleNextQuestion() {
+    if (!hasNextQuestion) return;
+
+    const nextQuestion = filteredQuestions[selectedQuestionIndex + 1];
+    setSelectedQuestionId(nextQuestion.id);
     resetAnswerState();
 
     setTimeout(() => {
@@ -459,8 +522,8 @@ export default function PyqBankPage() {
           </div>
 
           <div className="mt-6 rounded-2xl border border-white/10 bg-slate-900/80 p-4 text-sm text-slate-300">
-            Showing {startIndex}-{endIndex} of {filteredQuestions.length} matching
-            questions
+            Showing {startIndex}-{endIndex} of {filteredQuestions.length}{" "}
+            matching questions
           </div>
         </section>
 
@@ -537,7 +600,7 @@ export default function PyqBankPage() {
               disabled={page === 1 || filteredQuestions.length === 0}
               className="rounded-2xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50"
             >
-              Previous
+              Previous Page
             </button>
 
             <button
@@ -548,7 +611,7 @@ export default function PyqBankPage() {
               disabled={page === totalPages || filteredQuestions.length === 0}
               className="rounded-2xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50"
             >
-              Next
+              Next Page
             </button>
           </div>
         </section>
@@ -631,13 +694,21 @@ export default function PyqBankPage() {
               ref={practiceRef}
               className="mt-10 rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl"
             >
-              <div className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-                Practice
-              </div>
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <div className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+                    Practice
+                  </div>
 
-              <h2 className="mt-3 text-3xl font-bold">
-                {selectedQuestion.chapter}
-              </h2>
+                  <h2 className="mt-3 text-3xl font-bold">
+                    {selectedQuestion.chapter}
+                  </h2>
+                </div>
+
+                <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 px-4 py-3 text-sm font-semibold text-cyan-300">
+                  ⏱ Time: {formatTime(timeSpent)}
+                </div>
+              </div>
 
               <div className="mt-4 rounded-2xl border border-white/10 bg-slate-900/80 p-5">
                 <div className="text-sm text-slate-400">
@@ -660,7 +731,8 @@ export default function PyqBankPage() {
                       {(selectedQuestion.options ?? []).map((option, index) => {
                         const optionValue = getOptionValue(option);
                         const active = selectedOption === optionValue;
-                        const isCorrectOption = optionValue === correctAnswerValue;
+                        const isCorrectOption =
+                          optionValue === correctAnswerValue;
                         const optionLabel = String.fromCharCode(65 + index);
 
                         return (
@@ -726,6 +798,30 @@ export default function PyqBankPage() {
                     Explanation depth: {depth}
                   </div>
 
+                  <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-[1.5rem] border border-cyan-400/20 bg-cyan-400/10 p-4">
+                    <button
+                      type="button"
+                      onClick={handlePreviousQuestion}
+                      disabled={!hasPreviousQuestion}
+                      className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      ← Previous Question
+                    </button>
+
+                    <div className="text-sm font-medium text-cyan-300">
+                      {selectedQuestionIndex + 1} of {filteredQuestions.length}
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={handleNextQuestion}
+                      disabled={!hasNextQuestion}
+                      className="rounded-2xl bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      Next Question →
+                    </button>
+                  </div>
+
                   <div className="mt-8 flex flex-wrap gap-4">
                     <button
                       type="button"
@@ -780,8 +876,8 @@ export default function PyqBankPage() {
                 </>
               ) : (
                 <div className="mt-8 rounded-2xl border border-white/10 bg-slate-900/80 p-5 text-slate-300">
-                  This question does not have answer options yet, so practice mode
-                  is not available for it.
+                  This question does not have answer options yet, so practice
+                  mode is not available for it.
                 </div>
               )}
             </section>
