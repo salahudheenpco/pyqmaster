@@ -2,24 +2,26 @@ import { PYQQuestion } from "@/lib/types";
 
 export const bitsatheattransferQuestions: PYQQuestion[] = [
   {
-  id: "bitsat-2018-physics-heat-transfer-001",
-  exam: "BITSAT",
-  subject: "Physics",
-  chapter: "Heat Transfer",
-  topic: "Steady State Conduction",
-  year: 2018,
-  questionText: "Three rods of identical cross-sectional area and made from the same metal form the sides of an isosceles triangle ABC right angled at B as shown in figure. The point A and B are maintained at temperature T and √2T respectively, in the steady state. Now, assuming that only heat conduction takes place, the temperature of point C will be",
-  options: [
-    "T/(√2 + 1)",
-    "T/(√2 - 1)",
-    "3T/(√2 + 1)",
-    "√3T/(√2 + 1)"
-  ],
-  correctAnswer: "3T/(√2 + 1)",
-  explanation: {
-    quick: "Use thermal resistance proportional to rod length and apply steady-state heat balance at C.",
-    standard: "Since all rods have same material and area, thermal resistance is proportional only to length. Let the equal perpendicular sides be x, then hypotenuse is √2x. At steady state, heat entering C through BC equals heat leaving through AC. Solving gives temperature at C as 3T/(√2 + 1).",
-    deep: "Let us understand the question from the beginning…\n\nWe are told that the three sides of the triangle are conducting rods made of the same metal and having the same cross-sectional area. That means thermal resistance depends only on length:\nRth ∝ L\n\nNow look at the triangle:\n- AB = x\n- BC = x\n- AC = √2 x\nbecause it is an isosceles right triangle.\n\nGiven temperatures:\n- At A, temperature = T\n- At B, temperature = √2 T\n- At C, let temperature = θ\n\nAt steady state, the net heat accumulation at C is zero.\nSo:\nHeat flowing from B to C = Heat flowing from C to A\n\nUsing conduction law in resistance form:\n(√2T - θ) / x = (θ - T) / (√2x)\n\nMultiply both sides by x:\n√2T - θ = (θ - T)/√2\n\nMultiply through by √2:\n2T - √2θ = θ - T\n\nBring like terms together:\n3T = θ(√2 + 1)\n\nHence:\nθ = 3T / (√2 + 1)\n\nTherefore, the correct answer is 3T/(√2 + 1)."
+    id: "bitsat-2018-physics-heat-transfer-001",
+    exam: "BITSAT",
+    subject: "Physics",
+    chapter: "Heat Transfer",
+    topic: "Steady State Conduction",
+    year: 2018,
+    questionText: "Three rods of identical cross-sectional area and made from the same metal form the sides of an isosceles triangle ABC right angled at B as shown in figure. The point A and B are maintained at temperature T and √2T respectively, in the steady state. Now, assuming that only heat conduction takes place, the temperature of point C will be",
+    options: [
+      "T/(√2 + 1)",
+      "T/(√2 - 1)",
+      "3T/(√2 + 1)",
+      "√3T/(√2 + 1)"
+    ],
+    correctAnswer: "3T/(√2 + 1)",
+    explanation: {
+      quick: "In steady-state heat conduction, the temperature of junction C becomes constant, so no heat is stored at C. Since all rods are made of the same metal and have identical cross-sectional area, thermal resistance depends only on length. For a rod, Rth = L/(KA), so Rth ∝ L. In the isosceles right triangle, let AB = BC = x, so AC = √2x. Let the temperature of C be θ. Heat comes to C from hotter point B and leaves C toward colder point A. Therefore, (√2T - θ)/x = (θ - T)/(√2x). Solving gives √2(√2T - θ) = θ - T, so 2T - √2θ = θ - T. Hence 3T = θ(√2 + 1), giving θ = 3T/(√2 + 1).",
+      standard: "This problem is based on steady-state heat conduction through rods. In conduction, the rate of heat flow through a rod is H = KAΔT/L, where K is thermal conductivity, A is cross-sectional area, ΔT is temperature difference, and L is length of the rod. This can also be written like Ohm's law as H = ΔT/Rth, where thermal resistance Rth = L/(KA).\n\nHere all three rods are made of the same metal and have the same cross-sectional area. Therefore, K and A are the same for all rods, so the thermal resistance of each rod is directly proportional to its length. Since the triangle is an isosceles right triangle at B, we can take AB = BC = x and AC = √2x.\n\nThe temperatures at A and B are fixed at T and √2T respectively. Let the temperature at C be θ. Since √2T is greater than T, heat will flow from B towards C and from C towards A in steady state. At point C, no heat is accumulated, so the heat entering C through BC must equal the heat leaving C through AC.\n\nUsing H = ΔT/Rth, we get (√2T - θ)/x = (θ - T)/(√2x). Cancelling x and multiplying by √2 gives 2T - √2θ = θ - T. Rearranging, 3T = θ(√2 + 1). Therefore, θ = 3T/(√2 + 1). Hence, the temperature of point C is 3T/(√2 + 1).",
+      deep: "Let us understand the question from the beginning.\n\n1. Concept Introduction\nThis question is based on steady-state heat conduction. In a conducting rod, heat flows from the higher temperature end to the lower temperature end. The rate of heat flow through a rod is given by H = KAΔT/L, where H is heat current, K is thermal conductivity, A is cross-sectional area, ΔT is temperature difference between the ends, and L is the length of the rod.\n\nThis formula can also be written in thermal resistance form as H = ΔT/Rth, where Rth = L/(KA). Since all rods in this question are made of the same metal and have identical cross-sectional area, K and A are the same for all rods. Therefore, thermal resistance is proportional only to length.\n\n2. Given Information\nThe triangle ABC is an isosceles right triangle, right angled at B.\n\nLet AB = BC = x.\n\nThen the hypotenuse AC = √2x.\n\nTemperature at A is T.\n\nTemperature at B is √2T.\n\nLet the temperature at C be θ.\n\nOnly heat conduction takes place, and the system is in steady state.\n\n3. Strategy / Approach\nAt steady state, the temperature of point C remains constant. This means there is no heat accumulation at C. Therefore, the heat current entering C must be equal to the heat current leaving C. Since B is at √2T and A is at T, point B is hotter than point A. So heat flows from B to C and then from C to A.\n\nThe rod AB also conducts heat directly between A and B, but since A and B are maintained at fixed temperatures, that branch does not change the heat balance at junction C. To find θ, we only balance heat currents through rods BC and AC.\n\n4. Step-by-Step Solution\nThermal resistance is proportional to length. Therefore, for rod BC of length x, we can write its thermal resistance proportional to x.\n\nFor rod AC of length √2x, its thermal resistance is proportional to √2x.\n\nHeat current from B to C is:\n\nH_BC = (√2T - θ)/x.\n\nHeat current from C to A is:\n\nH_CA = (θ - T)/(√2x).\n\nAt steady state, heat entering C equals heat leaving C:\n\nH_BC = H_CA.\n\nSo:\n\n(√2T - θ)/x = (θ - T)/(√2x).\n\nCancel x from both denominators:\n\n√2T - θ = (θ - T)/√2.\n\nMultiply both sides by √2:\n\n√2(√2T - θ) = θ - T.\n\nNow expand the left side:\n\n2T - √2θ = θ - T.\n\nBring the temperature terms involving θ to one side and T terms to the other side:\n\n2T + T = θ + √2θ.\n\nSo:\n\n3T = θ(1 + √2).\n\nTherefore:\n\nθ = 3T/(√2 + 1).\n\n5. Key Insight\nThe key point is to treat the rods as thermal resistances. Since all rods have the same material and area, only their lengths matter. Also, at steady state, point C cannot store heat, so incoming heat current equals outgoing heat current.\n\n6. Final Answer\nTherefore, the correct answer is 3T/(√2 + 1).\n\n7. Common Mistakes\nStudents often forget that thermal resistance is proportional to length when material and area are the same.\n\nStudents may incorrectly use the rod AB in the junction C heat balance, even though AB is not directly connected to C.\n\nStudents may assume the temperature at C is the simple average of T and √2T, which is wrong because the path lengths are different.\n\nStudents may forget that AC is the hypotenuse of an isosceles right triangle, so AC = √2x."
+    }
   }
-}
 ];
+
+export default bitsatheattransferQuestions;
